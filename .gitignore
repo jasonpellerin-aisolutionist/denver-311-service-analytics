@@ -17,6 +17,8 @@ __pycache__/
 *.twbr
 tableau/*.hyper
 tableau/denver311_dashboard.twb
+tableau/denver311_dashboard.twbx
+hyperd*.log
 
 # OS / editor
 .DS_Store

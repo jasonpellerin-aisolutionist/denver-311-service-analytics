@@ -1,8 +1,10 @@
-"""Generate the Tableau Public workbook (tableau/denver311_dashboard.twb) from the exports.
+"""Generate the Tableau Public workbook (tableau/denver311_dashboard.twbx) from the exports.
 
-Open the result in Tableau Public (Desktop), check each sheet, then File > Save to Tableau
-Public As. The file points at tableau/exports/ by absolute path, so it is regenerated per
-machine and not committed. `--install-palettes` also writes the project palettes to
+Tableau Public only opens and saves workbooks whose data are extracts, so each CSV in
+tableau/exports/ is loaded into a .hyper extract and packaged with the workbook. The map is
+drawn from neighborhood_polygons.csv (Polygon marks), since spatial files are not extracted.
+Open the .twbx in Tableau Public (Desktop), check each sheet, then File > Save to Tableau
+Public As. `--install-palettes` also writes the project palettes to
 ~/Documents/My Tableau Repository/Preferences.tps so they appear in every color menu.
 """
 
@@ -11,13 +13,27 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import tempfile
 import uuid
+import zipfile
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
+
+from tableauhyperapi import (
+    Connection,
+    CreateMode,
+    HyperProcess,
+    Inserter,
+    SqlType,
+    TableDefinition,
+    TableName,
+    Telemetry,
+)
 
 from denver311 import EXPORT_DIR, ROOT
 
-OUT = ROOT / "tableau" / "denver311_dashboard.twb"
+OUT = ROOT / "tableau" / "denver311_dashboard.twbx"
 PREFERENCES = Path.home() / "Documents" / "My Tableau Repository" / "Preferences.tps"
 BUILD = "2026.2.3 (20262.26.0912.1023)"
 
@@ -60,7 +76,14 @@ LOS_TYPES = [
     "Transportation Sign Maintenance",
     "Signal Timing",
 ]
-DIMENSION_NUMBERS = {"year", "nbhd_id", "council_district", "month_of_year", "los_business_days"}
+DIMENSION_NUMBERS = {
+    "year",
+    "nbhd_id",
+    "council_district",
+    "month_of_year",
+    "los_business_days",
+    "point_order",
+}
 SOURCE_NOTE = (
     "Source: Denver Open Data Catalog, 311 Service Requests 2019-2025 (CC BY 3.0). "
     "Benchmark = each type's own 2019 P90, derived for this analysis, not a city target. "
@@ -121,19 +144,16 @@ class Calc:
 class Datasource:
     caption: str
     filename: str
-    spatial: bool = False
     calcs: list[Calc] = field(default_factory=list)
     formats: dict[str, str] = field(default_factory=dict)
-    geo_columns: list[tuple[str, str]] = field(default_factory=list)
+    geo_roles: dict[str, str] = field(default_factory=dict)
     styles: str = ""
     aliases: str = ""
 
     def __post_init__(self) -> None:
         self.name = "federated." + ident(self.caption)
-        self.conn = ("ogrdirect." if self.spatial else "textscan.") + ident(self.filename)
-        self.columns = (
-            self.geo_columns if self.spatial else infer_columns(EXPORT_DIR / self.filename)
-        )
+        self.conn = "hyper." + ident(self.filename)
+        self.columns = infer_columns(EXPORT_DIR / self.filename)
 
     def ref(self, instance: str) -> str:
         return f"[{self.name}].[{instance}]"
@@ -144,8 +164,11 @@ class Datasource:
             role, kind = role_of(col, dtype)
             fmt = self.formats.get(col)
             fmt_attr = f" default-format='{a(fmt)}'" if fmt else ""
+            geo = self.geo_roles.get(col)
+            geo_attr = f" semantic-role='{a(geo)}'" if geo else ""
             out.append(
-                f"<column datatype='{dtype}'{fmt_attr} name='[{a(col)}]' role='{role}' type='{kind}' />"
+                f"<column datatype='{dtype}'{fmt_attr} name='[{a(col)}]' role='{role}'"
+                f"{geo_attr} type='{kind}' />"
             )
         for c in self.calcs:
             fmt_attr = f" default-format='{a(c.fmt)}'" if c.fmt else ""
@@ -156,32 +179,53 @@ class Datasource:
             )
         return "\n        ".join(out)
 
+    @property
+    def hyper_path(self) -> str:
+        return f"Data/Extracts/{Path(self.filename).stem}.hyper"
+
+    def write_hyper(self, target: Path) -> int:
+        """Load the CSV into a .hyper extract (schema and table both named Extract)."""
+        types = {
+            "integer": SqlType.big_int(),
+            "real": SqlType.double(),
+            "string": SqlType.text(),
+            "boolean": SqlType.bool(),
+            "datetime": SqlType.timestamp(),
+        }
+        table = TableDefinition(
+            TableName("Extract", "Extract"),
+            [TableDefinition.Column(col, types[dtype]) for col, dtype in self.columns],
+        )
+        with (EXPORT_DIR / self.filename).open(newline="", encoding="utf-8") as fh:
+            records = [
+                [parse_value(r.get(col, ""), dtype) for col, dtype in self.columns]
+                for r in csv.DictReader(fh)
+            ]
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with (
+            HyperProcess(
+                telemetry=Telemetry.DO_NOT_SEND_USAGE_DATA_TO_TABLEAU,
+                parameters={"log_config": ""},
+            ) as hyper,
+            Connection(hyper.endpoint, target, CreateMode.CREATE_AND_REPLACE) as conn,
+        ):
+            conn.catalog.create_schema("Extract")
+            conn.catalog.create_table(table)
+            with Inserter(conn, table) as inserter:
+                inserter.add_rows(records)
+                inserter.execute()
+        return len(records)
+
     def xml(self) -> str:
-        directory = a(EXPORT_DIR.resolve())
-        if self.spatial:
-            layer = a(Path(self.filename).stem)
-            relation = f"<relation connection='{self.conn}' name='{layer}' table='[{layer}]' type='table' />"
-        else:
-            cols = "".join(
-                f"<column datatype='{dtype}' name='{a(col)}' ordinal='{i}' />"
-                for i, (col, dtype) in enumerate(self.columns)
-            )
-            relation = (
-                f"<relation connection='{self.conn}' name='{a(self.filename)}' "
-                f"table='[{a(self.filename.replace('.', '#'))}]' type='table'>"
-                f"<columns character-set='UTF-8' header='yes' locale='en_US' separator=','>{cols}</columns>"
-                f"</relation>"
-            )
-        conn_class = "ogrdirect" if self.spatial else "textscan"
         return f"""
     <datasource caption='{a(self.caption)}' inline='true' name='{self.name}' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='{a(Path(self.filename).stem)}' name='{self.conn}'>
-            <connection class='{conn_class}' directory='{directory}' filename='{a(self.filename)}' password='' server='' />
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='{a(self.hyper_path)}' default-settings='yes' port='' sslmode='' username='tableau_internal_user' />
           </named-connection>
         </named-connections>
-        {relation}
+        <relation connection='{self.conn}' name='Extract' table='[Extract].[Extract]' type='table' />
       </connection>
       <aliases enabled='yes' />
         {self.aliases}
@@ -206,6 +250,20 @@ def infer_columns(path: Path) -> list[tuple[str, str]]:
         values = [r[i] for r in body if i < len(r) and r[i] != ""]
         out.append((col, infer_type(col, values)))
     return out
+
+
+def parse_value(raw: str, dtype: str) -> object:
+    if raw == "":
+        return None
+    if dtype == "integer":
+        return int(raw)
+    if dtype == "real":
+        return float(raw)
+    if dtype == "boolean":
+        return raw == "true"
+    if dtype == "datetime":
+        return datetime.fromisoformat(raw)
+    return raw
 
 
 def infer_type(col: str, values: list[str]) -> str:
@@ -360,26 +418,8 @@ channel_speed.styles = measure_names_map([(PHONE, NAVY), (APP, TEAL)])
 
 neighborhoods = Datasource(
     "Neighborhoods",
-    "neighborhoods_metrics.geojson",
-    spatial=True,
-    geo_columns=[
-        ("Geometry", "spatial"),
-        ("nbhd_id", "integer"),
-        ("neighborhood", "string"),
-        ("council_district", "integer"),
-        ("population", "integer"),
-        ("per_capita_income", "integer"),
-        ("pct_poverty", "real"),
-        ("pct_renters", "real"),
-        ("field_requests", "integer"),
-        ("field_requests_2025", "integer"),
-        ("field_requests_per_1k_per_year", "real"),
-        ("top_category", "string"),
-        ("share_open_in_file", "real"),
-        ("wait_index", "real"),
-        ("ranked_requests", "integer"),
-        ("p50_days", "real"),
-    ],
+    "neighborhood_polygons.csv",
+    geo_roles={"latitude": "[Geographical].[Latitude]", "longitude": "[Geographical].[Longitude]"},
     formats={"wait_index": "n0.000", "p50_days": "n#,##0.0", "per_capita_income": 'c"$"#,##0'},
 )
 
@@ -620,29 +660,33 @@ sheets = [
         "Neighborhood wait map",
         "Wait index by neighborhood (0.50 = typical for the same request type and year)",
         neighborhoods,
-        rows=neighborhoods.ref("Latitude (generated)"),
-        cols=neighborhoods.ref("Longitude (generated)"),
-        mark="Multipolygon",
+        rows=neighborhoods.ref("avg:latitude:qk"),
+        cols=neighborhoods.ref("avg:longitude:qk"),
+        mark="Polygon",
         encodings=[
             ("color", neighborhoods.ref("avg:wait_index:qk")),
             ("lod", neighborhoods.ref("none:neighborhood:nk")),
+            ("lod", neighborhoods.ref("none:part_id:nk")),
             ("lod", neighborhoods.ref("avg:p50_days:qk")),
             ("lod", neighborhoods.ref("avg:field_requests_per_1k_per_year:qk")),
             ("lod", neighborhoods.ref("avg:per_capita_income:qk")),
             ("lod", neighborhoods.ref("avg:pct_poverty:qk")),
-            ("lod", neighborhoods.ref("sum:ranked_requests:qk")),
-            ("geometry", neighborhoods.ref("collect:Geometry:ok")),
+            ("lod", neighborhoods.ref("avg:ranked_requests:qk")),
+            ("path", neighborhoods.ref("none:point_order:ok")),
         ],
         instances=[
+            "avg:latitude:qk",
+            "avg:longitude:qk",
             "avg:wait_index:qk",
             "none:neighborhood:nk",
+            "none:part_id:nk",
             "avg:p50_days:qk",
             "avg:field_requests_per_1k_per_year:qk",
             "avg:per_capita_income:qk",
             "avg:pct_poverty:qk",
-            "sum:ranked_requests:qk",
+            "avg:ranked_requests:qk",
             "none:ranked_requests:qk",
-            "collect:Geometry:ok",
+            "none:point_order:ok",
         ],
         filters=(
             f"<filter class='quantitative' column='{a(neighborhoods.ref('none:ranked_requests:qk'))}' "
@@ -814,10 +858,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--install-palettes", action="store_true")
     args = parser.parse_args()
-    OUT.write_text(workbook_xml(), encoding="utf-8")
-    print(
-        f"wrote {OUT.relative_to(ROOT)} ({len(sheets)} worksheets, {len(DATASOURCES)} data sources)"
-    )
+    with (
+        tempfile.TemporaryDirectory() as tmp,
+        zipfile.ZipFile(OUT, "w", zipfile.ZIP_DEFLATED) as twbx,
+    ):
+        twbx.writestr(OUT.with_suffix(".twb").name, workbook_xml())
+        for ds in DATASOURCES:
+            hyper = Path(tmp) / Path(ds.hyper_path).name
+            rows = ds.write_hyper(hyper)
+            twbx.write(hyper, ds.hyper_path)
+            print(f"  {ds.hyper_path}: {rows:,} rows")
+    print(f"wrote {OUT.relative_to(ROOT)} ({len(sheets)} worksheets, {len(DATASOURCES)} extracts)")
     if args.install_palettes:
         install_palettes()
 

@@ -86,6 +86,51 @@ SELECT * FROM (VALUES
 """
 
 
+POLYGON_FIELDS = [
+    "nbhd_id",
+    "neighborhood",
+    "part_id",
+    "point_order",
+    "latitude",
+    "longitude",
+    "wait_index",
+    "ranked_requests",
+    "p50_days",
+    "field_requests_per_1k_per_year",
+    "per_capita_income",
+    "pct_poverty",
+]
+
+
+def write_polygon_vertices(geo_path, out_path) -> int:
+    """One row per outline vertex, for Tableau Polygon marks.
+
+    Tableau Public only saves extracts and will not extract a spatial file, so the map is drawn
+    from this CSV instead. Exterior rings only: the 7 interior holes (enclaves) are filled.
+    """
+    features = json.loads(geo_path.read_text())["features"]
+    rows = 0
+    with out_path.open("w", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=POLYGON_FIELDS)
+        writer.writeheader()
+        for feature in features:
+            props, geom = feature["properties"], feature["geometry"]
+            parts = [geom["coordinates"]] if geom["type"] == "Polygon" else geom["coordinates"]
+            for part_id, rings in enumerate(parts):
+                for order, (lon, lat) in enumerate(rings[0]):
+                    writer.writerow(
+                        {
+                            **{k: props[k] for k in POLYGON_FIELDS if k in props},
+                            "part_id": f"{props['nbhd_id']}-{part_id}",
+                            "point_order": order,
+                            "latitude": round(lat, 6),
+                            "longitude": round(lon, 6),
+                        }
+                    )
+                    rows += 1
+    return rows
+
+
 def write_csv(con: duckdb.DuckDBPyConnection, name: str, query: str) -> int:
     path = EXPORT_DIR / f"{name}.csv"
     con.execute(f"COPY ({query}) TO '{path}' (HEADER, DELIMITER ',')")
@@ -116,6 +161,8 @@ def main() -> None:
     )
     print(f"  {geo.name}: 78 polygons")
     con.close()
+    rows = write_polygon_vertices(geo, EXPORT_DIR / "neighborhood_polygons.csv")
+    print(f"  neighborhood_polygons.csv: {rows:,} vertices")
 
     log = json.loads((PROCESSED_DIR / "cleaning_log.json").read_text())
     with (EXPORT_DIR / "cleaning_log.csv").open("w", newline="") as fh:

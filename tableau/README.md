@@ -8,15 +8,19 @@ Working title: **Denver 311: Where the Work Comes From and How Fast It Closes (2
 
 ## Fast path: generated workbook
 
-`make tableau` writes `tableau/denver311_dashboard.twb` (all seven data sources, calculated
-fields, the eight worksheets, and the dashboard below) and installs the project palettes into
-`~/Documents/My Tableau Repository/Preferences.tps`. The file points at `tableau/exports/` by
-absolute path, so it is generated per machine and not committed.
+`make tableau` writes `tableau/denver311_dashboard.twbx`: the eight worksheets, the dashboard
+below, calculated fields, and the project palettes, packaged with one `.hyper` extract per data
+source (built from `tableau/exports/` with Tableau's Hyper API). It also installs the palettes
+into `~/Documents/My Tableau Repository/Preferences.tps`. The `.twbx` is generated, not committed.
 
-1. Open `tableau/denver311_dashboard.twb` in Tableau Public (Desktop).
-2. Convert each data source to an extract (Tableau Public only saves extracts): Data menu >
-   source name > Extract Data > Extract, saving the `.hyper` files in `tableau/`.
-3. Check each sheet, then follow **Publish** below.
+1. Open `tableau/denver311_dashboard.twbx` in Tableau Public (Desktop).
+2. Check each sheet, then follow **Publish** below.
+
+Tableau Public only opens workbooks whose data are extracts, which is why the sources ship as
+`.hyper` files rather than live CSV links. The neighborhood map is drawn from
+`neighborhood_polygons.csv` (one row per outline vertex, Polygon mark, Path = point order)
+because spatial files are not extracted. Outlines are exterior rings only, so the seven interior
+holes (enclaves) are filled.
 
 The rest of this guide documents the same build by hand.
 
@@ -50,7 +54,7 @@ Connect each file as its own data source (Connect > To a File > Text file, or Sp
 | Monthly | `monthly_category.csv` | month x request category |
 | Channel Year | `channel_year.csv` | year x intake channel |
 | Channel Speed | `channel_speed.csv` | request type, phone vs app median hours |
-| Neighborhoods | `neighborhoods_metrics.geojson` | 78 statistical neighborhoods with metrics and polygons |
+| Neighborhoods | `neighborhood_polygons.csv` | one row per outline vertex of the 78 neighborhoods, with metrics (`neighborhoods_metrics.geojson` holds the same shapes for other tools) |
 | Hotspots (optional) | `hotspots.csv` | 0.005 degree grid cell x category, cells with 25+ requests |
 
 In **Type Year**, set `year` to a discrete dimension (Date part not needed) and `record_gap`
@@ -117,7 +121,9 @@ Channel Speed:
    `SUM(field_requests)`. Color: `request_category`, filtered to the top 6 categories by
    volume, using navy, teal, blue, slate, `#5b8db8`, `#5eada5`. Add the rolling 12-month line
    as a second view or a reference toggle.
-6. **Neighborhood wait map** (Neighborhoods). Double-click `Geometry`. Color: `wait_index`
+6. **Neighborhood wait map** (Neighborhoods). Set `latitude` and `longitude` to their
+   geographic roles and put AVG of each on Rows and Columns. Mark type Polygon, `neighborhood`
+   and `part_id` on Detail, `point_order` (dimension) on Path. Color: `wait_index`
    diverging ramp centered at 0.50. Filter `ranked_requests >= 500` (show the rest in light
    grey via a second layer or leave unfiltered with a note). Tooltip: neighborhood, wait index,
    P50 days, field requests per 1k residents per year, per-capita income, poverty rate.
