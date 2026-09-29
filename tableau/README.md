@@ -6,6 +6,20 @@ saved to a free Tableau Public profile.
 
 Working title: **Denver 311: Where the Work Comes From and How Fast It Closes (2019-2025)**
 
+## Fast path: generated workbook
+
+`make tableau` writes `tableau/denver311_dashboard.twb` (all seven data sources, calculated
+fields, the eight worksheets, and the dashboard below) and installs the project palettes into
+`~/Documents/My Tableau Repository/Preferences.tps`. The file points at `tableau/exports/` by
+absolute path, so it is generated per machine and not committed.
+
+1. Open `tableau/denver311_dashboard.twb` in Tableau Public (Desktop).
+2. Convert each data source to an extract (Tableau Public only saves extracts): Data menu >
+   source name > Extract Data > Extract, saving the `.hyper` files in `tableau/`.
+3. Check each sheet, then follow **Publish** below.
+
+The rest of this guide documents the same build by hand.
+
 ## Palette
 
 Use these colors only (no red or orange anywhere, including default Tableau palettes).

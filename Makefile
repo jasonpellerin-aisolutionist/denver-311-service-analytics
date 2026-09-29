@@ -2,7 +2,7 @@ PG_BIN ?= /opt/homebrew/opt/postgresql@17/bin
 PGDATABASE ?= denver311
 YEARS ?= 2019 2020 2021 2022 2023 2024 2025
 
-.PHONY: setup download clean load-duckdb load-postgres analyze export workbook notebooks lab lint all
+.PHONY: setup download clean load-duckdb load-postgres analyze export workbook tableau notebooks lab lint all
 
 setup:
 	uv sync
@@ -28,6 +28,9 @@ export:
 
 workbook:
 	uv run python -m denver311.workbook
+
+tableau:
+	uv run python -m denver311.tableau_workbook --install-palettes
 
 notebooks:
 	for nb in notebooks/*.ipynb; do uv run jupyter nbconvert --to notebook --execute --inplace $$nb; done

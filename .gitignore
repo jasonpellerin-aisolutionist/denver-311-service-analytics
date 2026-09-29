@@ -16,6 +16,7 @@ __pycache__/
 # Tableau local workbooks (the published version lives on Tableau Public)
 *.twbr
 tableau/*.hyper
+tableau/denver311_dashboard.twb
 
 # OS / editor
 .DS_Store
