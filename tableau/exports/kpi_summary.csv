@@ -1,0 +1,16 @@
+metric,value,unit,note
+"Contacts, 2019-2025",3010330.0,count,Every row in the seven yearly files after cleaning.
+"Field requests, 2019-2025",816266.0,count,"Tied to a Denver place; not spam, duplicate, transferred, or out of jurisdiction."
+Field share of contacts,0.27115498965229723,share,"Most 311 contacts are questions, not field work."
+Closed within 15 minutes,0.6085924134563321,share,Contacts closed within 15 minutes of creation.
+"Like-for-like field requests, 2019 to 2025",0.05054345128790505,change,"Excludes solid-waste types, which leave the 311 file after 2020."
+"App share of field requests, 2019",0.22861357862019835,share,PocketGov share of field requests.
+"App share of field requests, 2022 peak",0.4814673396785189,share,PocketGov share of field requests.
+"App share of field requests, 2025",0.25747139469183744,share,PocketGov share of field requests.
+Request types slower to close via app,14.0,count,Out of 14 types with 500+ closed requests on both channels.
+Type-years with a record gap,13.0,count,Out of 175; over 20% never closed or over 25% closed on one day.
+Top 20 answered-on-the-spot phone topics,0.25126078339070734,share,"Share of all phone contacts: no location, answered, closed within 15 minutes."
+"Neighborhood wait index, lowest",0.4571836106698516,index,0.50 is typical for the same request type and year; 75 neighborhoods with 500+ ranked requests.
+"Neighborhood wait index, highest",0.5332983455893613,index,0.50 is typical for the same request type and year.
+"Council district wait index, lowest",0.48638561435999783,index,All 11 districts.
+"Council district wait index, highest",0.515707016798037,index,All 11 districts.

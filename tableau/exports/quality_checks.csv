@@ -1,0 +1,12 @@
+check_name,failing_rows,tolerance,passed
+request_id is unique,0,0,true
+created_at is never null,0,0,true
+created year matches file year,0,0,true
+created_at within 2019-2025,0,0,true
+hours_to_close is non-negative,0,0,true
+closed rows have a duration,0,0,true
+coordinates inside Denver box,0,0,true
+council district in 1-11,0,0,true
+every row has a category,0,0,true
+geocoded rows matched to a neighborhood (<3% miss),3508,24196,true
+neighborhood population sums to ACS total (+/- 1%),0,0,true

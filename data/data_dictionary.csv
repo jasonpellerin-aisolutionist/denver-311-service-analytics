@@ -1,0 +1,37 @@
+column,type,source,description
+request_id,text,derived,"Stable row key: file year plus row position in that year's file (e.g. 2024-000123)."
+file_year,smallint,derived,Year of the published file the row came from.
+created_at,timestamp,Case Created dttm,When the 311 case was created (local time).
+closed_at,timestamp,Case Closed dttm,When the 311 case was closed. Null means no close in the published file.
+created_date,date,derived,Calendar date of created_at.
+created_year,smallint,derived,Year of created_at. Always equals file_year (checked).
+created_month,timestamp,derived,First day of the month of created_at.
+created_hour,smallint,derived,Hour of day of created_at (0-23).
+created_dow,smallint,derived,Day of week of created_at (0 = Monday).
+hours_to_close,double,derived,"closed_at minus created_at in hours. Measures the 311 case record, not crew completion."
+days_to_close,double,derived,hours_to_close divided by 24.
+is_closed,boolean,derived,True when closed_at is present.
+flag_closed_before_created,boolean,derived,True when closed_at is earlier than created_at (0 rows in 2019-2025).
+request_type,text,Case Summary,"Request type, trimmed and normalized. The source Type and Topic columns are empty, so this is the type field."
+request_category,text,derived,"One of 14 categories: keyword rules on request_type first, owning agency as fallback."
+agency,text,Agency,"City agency. Environmental Health (2019 only) merged into Public Health & Environment."
+case_status,text,Case Status,"Status label with typo and synonym merges (Transfered, Duplicate Case, Spam, Approved)."
+status_group,text,derived,"answered, resolved, transferred, out_of_jurisdiction, invalid, or open."
+case_source,text,Case Source,"Original intake source label (Phone, PocketGov, Email - ..., City Council ...)."
+channel,text,derived,"Phone, App (PocketGov), Email, Council Office, Web & Chat, or Other."
+first_call_resolution,boolean,First Call Resolution,"Source flag. It is Y on 99% of rows, so it is not used as a resolution measure."
+has_location,boolean,derived,"True when the row has in-city coordinates, an incident address, or an intersection."
+is_field_request,boolean,derived,"Tied to a Denver place and not invalid, transferred out, or out of jurisdiction. The base for speed metrics."
+incident_address_1,text,Incident Address 1,Street address of the request.
+incident_address_2,text,Incident Address 2,Secondary address line.
+incident_intersection_1,text,Incident Intersection 1,Cross street 1.
+incident_intersection_2,text,Incident Intersection 2,Cross street 2.
+incident_zip,char(5),Incident Zip Code,5-digit zip; 00000 and blanks are null.
+customer_zip,char(5),Customer Zip Code,5-digit zip of the requester; 00000 and blanks are null.
+latitude,double,Latitude,"Null when 0, outside the Denver box, or equal to longitude (copy error)."
+longitude,double,Longitude,Same rules as latitude.
+council_district,smallint,Council District,1-11; 0 and blanks are null.
+police_district,smallint,Police District,1-7; 0 and blanks are null.
+case_summary,text,Case Summary,Cleaned copy of the source summary (same as request_type before blank fill).
+nbhd_id,integer,derived,Statistical neighborhood ID from a point-in-polygon join on the coordinates.
+neighborhood,text,derived,Statistical neighborhood name (78 total). The source Neighborhood column is empty in every year.

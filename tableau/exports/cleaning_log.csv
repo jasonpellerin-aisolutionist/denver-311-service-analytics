@@ -1,0 +1,18 @@
+step,rows,decision
+load,3012345,Read 7 yearly files; normalized headers across formats.
+drop_exact_duplicates,2015,Dropped rows identical on every source field.
+trim_text,11576,"Request type text fixed (non-breaking spaces, padding); all text fields trimmed, blank to null."
+drop_empty_columns,5,"Dropped columns under 0.1% filled: division, major_area, type, topic, neighborhood."
+merge_agency_names,44144,Environmental Health (2019 only) merged into Public Health & Environment; stray Accounting and ROWE labels merged.
+merge_status_labels,50915,"Merged typo and synonym status labels (Transfered, Duplicate Case, Spam, Approved)."
+drop_unparseable_created,0,Dropped rows with no parseable created timestamp.
+flag_closed_before_created,0,"Close earlier than create: kept the row, nulled hours_to_close."
+open_cases,136857,"No close timestamp: kept as open backlog, excluded from time-to-close percentiles."
+zero_duration,1317584,Closed at the same second it was created: counted as handled on contact.
+null_longitude_copy,21417,Longitude equal to latitude (copy error): coordinates nulled.
+null_outside_city,133,Non-zero coordinates outside the Denver bounding box: nulled.
+zero_coordinates,2182260,0 or blank coordinates treated as missing.
+normalize_zip_and_districts,3010330,"Zips to 5 digits (00000 is null); districts outside 1-11 / 1-7 (0, blank, text) are null."
+categorize_request_types,48803,"Distinct request types mapped to 14 categories: keyword rules first, owning agency as fallback."
+define_field_requests,816266,"Field request = tied to a Denver place and not invalid, transferred out, or out of jurisdiction."
+write,3010330,Wrote requests.parquet.

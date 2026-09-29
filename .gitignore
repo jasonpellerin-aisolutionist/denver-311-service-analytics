@@ -1,0 +1,22 @@
+# Data is downloaded by `make download`; never commit raw or processed files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.duckdb
+*.duckdb.wal
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Tableau local workbooks (the published version lives on Tableau Public)
+*.twbr
+tableau/*.hyper
+
+# OS / editor
+.DS_Store
+.env

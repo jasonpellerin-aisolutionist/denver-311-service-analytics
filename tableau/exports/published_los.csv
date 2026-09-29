@@ -1,0 +1,36 @@
+request_type,year,los_business_days,requests,closed,share_within_los,p50_business_days,p90_business_days,record_gap
+Pothole,2019,5,3667,3667,0.8879192800654486,1.0,6.0,false
+Pothole,2020,5,5180,5180,0.9090733590733591,1.0,5.0,false
+Pothole,2021,5,4158,4157,0.976911976911977,1.0,3.0,false
+Pothole,2022,5,3981,3981,0.9118311981914092,1.0,5.0,false
+Pothole,2023,5,4340,4280,0.783410138248848,2.0,9.0,false
+Pothole,2024,5,3080,3069,0.8603896103896104,2.0,6.0,false
+Pothole,2025,5,2387,2377,0.9614578969417679,1.0,4.0,false
+Signal Hazard (Traffic),2019,5,808,808,0.8948019801980198,1.0,6.0,false
+Signal Hazard (Traffic),2020,5,433,433,0.9099307159353349,0.0,4.0,false
+Signal Hazard (Traffic),2021,5,382,382,0.9319371727748691,1.0,4.0,false
+Signal Hazard (Traffic),2022,5,622,622,0.8569131832797428,1.0,7.0,false
+Signal Hazard (Traffic),2023,5,551,550,0.8638838475499092,1.0,7.0,false
+Signal Hazard (Traffic),2024,5,689,676,0.7271407837445574,2.0,88.0,false
+Signal Hazard (Traffic),2025,5,663,652,0.9396681749622926,1.0,3.0,false
+Signal Timing,2019,90,368,347,0.9429347826086957,1.0,7.0,false
+Signal Timing,2020,90,388,377,0.8969072164948454,1.0,64.2000000000001,false
+Signal Timing,2021,90,545,545,0.9009174311926605,3.0,90.0,false
+Signal Timing,2022,90,628,626,0.9538216560509554,6.0,53.0,false
+Signal Timing,2023,90,665,608,0.8646616541353384,3.0,43.0,false
+Signal Timing,2024,90,625,495,0.6064,19.0,161.60000000000002,true
+Signal Timing,2025,90,603,513,0.8126036484245439,3.0,62.0,false
+Transportation Sign Maintenance,2019,45,138,137,0.9927536231884058,3.0,8.0,false
+Transportation Sign Maintenance,2020,45,1004,1003,0.9671314741035857,4.0,14.800000000000068,false
+Transportation Sign Maintenance,2021,45,1142,1140,0.9658493870402802,5.0,14.0,false
+Transportation Sign Maintenance,2022,45,1432,1429,0.973463687150838,5.0,20.0,false
+Transportation Sign Maintenance,2023,45,1212,1192,0.9405940594059405,4.0,21.0,false
+Transportation Sign Maintenance,2024,45,1382,1303,0.6497829232995659,17.0,128.0,false
+Transportation Sign Maintenance,2025,45,1150,1025,0.782608695652174,3.0,59.0,false
+Transportation Signal Maintenance,2019,30,51,50,0.9803921568627451,1.0,5.0,false
+Transportation Signal Maintenance,2020,30,434,431,0.9723502304147466,2.0,13.0,false
+Transportation Signal Maintenance,2021,30,659,658,0.9635811836115327,3.0,9.0,false
+Transportation Signal Maintenance,2022,30,654,654,0.9587155963302753,4.0,18.0,false
+Transportation Signal Maintenance,2023,30,668,660,0.9625748502994012,2.0,10.0,false
+Transportation Signal Maintenance,2024,30,676,646,0.7085798816568047,3.0,102.0,false
+Transportation Signal Maintenance,2025,30,462,440,0.9307359307359307,1.0,4.0,false

@@ -1,0 +1,1018 @@
+nbhd_id,neighborhood,request_category,field_requests,per_1k_per_year
+1,Athmar Park,Neighborhood Inspection,2078,36.56776827508534
+1,Athmar Park,Streets & Traffic,1694,29.81029810298103
+1,Athmar Park,Solid Waste,1446,25.446098616830326
+1,Athmar Park,Parking & Vehicles,674,11.860767958328935
+1,Athmar Park,General Information,601,10.576144722486186
+1,Athmar Park,Licensing & Permits,565,9.942631893851404
+1,Athmar Park,Public Safety (non-emergency),542,9.537887586668075
+1,Athmar Park,Public Health & Noise,463,8.147678879386197
+1,Athmar Park,Animals,431,7.584556365044169
+1,Athmar Park,Encampments,388,6.827860486397071
+1,Athmar Park,Parks & Trees,249,4.3817970647238935
+1,Athmar Park,"Clerk, DMV & Elections",74,1.3022208144159364
+1,Athmar Park,Taxes & Property,65,1.1438426072572414
+1,Athmar Park,Other,1,0.01759757857318833
+2,Auraria,Streets & Traffic,471,97.23369116432701
+2,Auraria,Neighborhood Inspection,217,44.797687861271676
+2,Auraria,Public Safety (non-emergency),110,22.708505367464902
+2,Auraria,Parks & Trees,107,22.08918249380677
+2,Auraria,Licensing & Permits,106,21.882741535920726
+2,Auraria,Encampments,76,15.68951279933939
+2,Auraria,General Information,54,11.147811725846408
+2,Auraria,Public Health & Noise,47,9.702725020644097
+2,Auraria,Parking & Vehicles,25,5.161023947151115
+2,Auraria,Solid Waste,18,3.715937241948803
+2,Auraria,Animals,10,2.0644095788604457
+2,Auraria,Taxes & Property,2,0.41288191577208916
+2,Auraria,"Clerk, DMV & Elections",1,0.20644095788604458
+3,Baker,Neighborhood Inspection,2637,57.04335035043697
+3,Baker,Streets & Traffic,2143,46.35718612096565
+3,Baker,Solid Waste,1346,29.11655273859998
+3,Baker,Public Safety (non-emergency),1092,23.62204724409449
+3,Baker,Encampments,1086,23.49225577572034
+3,Baker,Licensing & Permits,1021,22.08618153500043
+3,Baker,Parking & Vehicles,977,21.134377433590036
+3,Baker,General Information,714,15.445184736523318
+3,Baker,Public Health & Noise,519,11.226962014363588
+3,Baker,Animals,246,5.3214502033399675
+3,Baker,Parks & Trees,138,2.9852037726053475
+3,Baker,"Clerk, DMV & Elections",65,1.40607424071991
+3,Baker,Taxes & Property,56,1.2113870381586918
+4,Barnum,Solid Waste,1250,36.236085343228204
+4,Barnum,Neighborhood Inspection,1095,31.7428107606679
+4,Barnum,Streets & Traffic,902,26.14795918367347
+4,Barnum,Parking & Vehicles,557,16.146799628942485
+4,Barnum,General Information,535,15.50904452690167
+4,Barnum,Public Safety (non-emergency),443,12.842068645640074
+4,Barnum,Animals,403,11.68251391465677
+4,Barnum,Licensing & Permits,327,9.479359925788497
+4,Barnum,Public Health & Noise,269,7.798005565862709
+4,Barnum,Parks & Trees,234,6.783395176252319
+4,Barnum,Encampments,126,3.6525974025974026
+4,Barnum,"Clerk, DMV & Elections",45,1.304499072356215
+4,Barnum,Taxes & Property,40,1.1595547309833025
+5,Barnum West,Solid Waste,1045,29.00441311166005
+5,Barnum West,Neighborhood Inspection,818,22.7039329429071
+5,Barnum West,Streets & Traffic,738,20.483499403258488
+5,Barnum West,Parking & Vehicles,409,11.35196647145355
+5,Barnum West,Encampments,383,10.630325571067752
+5,Barnum West,General Information,367,10.186238863138028
+5,Barnum West,Animals,306,8.493158289155959
+5,Barnum West,Public Safety (non-emergency),301,8.354381192927919
+5,Barnum West,Licensing & Permits,231,6.41150184573538
+5,Barnum West,Public Health & Noise,227,6.30048016875295
+5,Barnum West,Parks & Trees,167,4.635155014016487
+5,Barnum West,Taxes & Property,48,1.3322601237891698
+5,Barnum West,"Clerk, DMV & Elections",42,1.1657276083155237
+6,Bear Valley,Neighborhood Inspection,908,16.025980444067915
+6,Bear Valley,Streets & Traffic,683,12.054784849447561
+6,Bear Valley,Parking & Vehicles,677,11.948886300257685
+6,Bear Valley,Solid Waste,650,11.472342828903244
+6,Bear Valley,General Information,383,6.7598573899537575
+6,Bear Valley,Public Safety (non-emergency),338,5.965618271029687
+6,Bear Valley,Animals,222,3.9182463200254163
+6,Bear Valley,Public Health & Noise,219,3.865297045430477
+6,Bear Valley,Licensing & Permits,183,3.229905750291221
+6,Bear Valley,Parks & Trees,182,3.2122559920929086
+6,Bear Valley,Encampments,90,1.5884782378481415
+6,Bear Valley,Taxes & Property,51,0.9001376681139468
+6,Bear Valley,"Clerk, DMV & Elections",38,0.670690811535882
+7,Belcaro,Streets & Traffic,1562,39.34112431996776
+7,Belcaro,Neighborhood Inspection,902,22.718114043925045
+7,Belcaro,Solid Waste,801,20.17428974410639
+7,Belcaro,General Information,278,7.001813419302842
+7,Belcaro,Licensing & Permits,263,6.624017731210961
+7,Belcaro,Parking & Vehicles,232,5.843239975821077
+7,Belcaro,Public Safety (non-emergency),212,5.33951239169857
+7,Belcaro,Parks & Trees,192,4.835784807576062
+7,Belcaro,Public Health & Noise,154,3.8787023977433006
+7,Belcaro,Encampments,127,3.1986701591779165
+7,Belcaro,Animals,72,1.8134193028410237
+7,Belcaro,Taxes & Property,49,1.2341325811001411
+7,Belcaro,"Clerk, DMV & Elections",37,0.9318960306266371
+8,Berkeley,Neighborhood Inspection,3119,48.60072301171777
+8,Berkeley,Solid Waste,2265,35.293567688855646
+8,Berkeley,Streets & Traffic,2227,34.70144602343556
+8,Berkeley,Licensing & Permits,942,14.67838444278235
+8,Berkeley,Parking & Vehicles,861,13.416230366492147
+8,Berkeley,General Information,804,12.528047868362004
+8,Berkeley,Public Safety (non-emergency),544,8.476689104961356
+8,Berkeley,Public Health & Noise,461,7.18337073049115
+8,Berkeley,Parks & Trees,355,5.531662926950886
+8,Berkeley,Animals,261,4.066940912490651
+8,Berkeley,Encampments,192,2.9917726252804786
+8,Berkeley,"Clerk, DMV & Elections",100,1.5582149090002495
+8,Berkeley,Taxes & Property,93,1.4491398653702319
+9,Capitol Hill,Streets & Traffic,2956,25.373172762465558
+9,Capitol Hill,Encampments,2827,24.26588612973279
+9,Capitol Hill,Neighborhood Inspection,2794,23.982626758568596
+9,Capitol Hill,Public Safety (non-emergency),1754,15.05566475824242
+9,Capitol Hill,General Information,1560,13.390443000489267
+9,Capitol Hill,Solid Waste,1527,13.10718362932507
+9,Capitol Hill,Parking & Vehicles,1206,10.351842473455163
+9,Capitol Hill,Public Health & Noise,1096,9.40764456957451
+9,Capitol Hill,Licensing & Permits,1078,9.253139458030404
+9,Capitol Hill,Animals,275,2.3604947597016337
+9,Capitol Hill,Parks & Trees,184,1.5793855846730929
+9,Capitol Hill,Taxes & Property,85,0.7296074711805048
+9,Capitol Hill,"Clerk, DMV & Elections",82,0.703856619256487
+10,CBD,Licensing & Permits,1548,50.21409108602569
+10,CBD,Neighborhood Inspection,1470,47.68392370572207
+10,CBD,Streets & Traffic,1416,45.93226936551187
+10,CBD,General Information,970,31.464902037109123
+10,CBD,Public Safety (non-emergency),942,30.5566368236668
+10,CBD,Public Health & Noise,684,22.187621642662513
+10,CBD,Parking & Vehicles,526,17.06241079538082
+10,CBD,Encampments,286,9.277280394446606
+10,CBD,Solid Waste,275,8.920461917737121
+10,CBD,"Clerk, DMV & Elections",120,3.8925652004671076
+10,CBD,Animals,105,3.4059945504087192
+10,CBD,Parks & Trees,98,3.1789282470481384
+10,CBD,Taxes & Property,83,2.6923575969897495
+11,Chaffee Park,Neighborhood Inspection,831,30.207197382769902
+11,Chaffee Park,Solid Waste,797,28.971283169756454
+11,Chaffee Park,Streets & Traffic,580,21.08324245728826
+11,Chaffee Park,Parking & Vehicles,369,13.413304252998909
+11,Chaffee Park,General Information,303,11.014176663031625
+11,Chaffee Park,Licensing & Permits,268,9.741912031988367
+11,Chaffee Park,Public Safety (non-emergency),259,9.414758269720101
+11,Chaffee Park,Public Health & Noise,201,7.306434023991277
+11,Chaffee Park,Animals,146,5.307161032351872
+11,Chaffee Park,Parks & Trees,92,3.344238458742275
+11,Chaffee Park,Encampments,83,3.0170846964740097
+11,Chaffee Park,Taxes & Property,57,2.071973827699018
+11,Chaffee Park,"Clerk, DMV & Elections",23,0.8360596146855688
+12,Cheesman Park,Neighborhood Inspection,1418,22.814667031358102
+12,Cheesman Park,Streets & Traffic,1352,21.752771386739177
+12,Cheesman Park,Parking & Vehicles,881,14.174697922867763
+12,Cheesman Park,Solid Waste,815,13.112802278248838
+12,Cheesman Park,General Information,785,12.630122439785689
+12,Cheesman Park,Encampments,677,10.89247502131836
+12,Cheesman Park,Public Safety (non-emergency),676,10.876385693369588
+12,Cheesman Park,Licensing & Permits,584,9.396167522082603
+12,Cheesman Park,Parks & Trees,540,8.688237092336651
+12,Cheesman Park,Public Health & Noise,435,6.998857657715638
+12,Cheesman Park,Animals,168,2.703007095393626
+12,Cheesman Park,"Clerk, DMV & Elections",59,0.9492703489775232
+12,Cheesman Park,Taxes & Property,52,0.8366450533361222
+13,Cherry Creek,Streets & Traffic,2706,59.794497845541926
+13,Cherry Creek,Neighborhood Inspection,1668,36.85780576731853
+13,Cherry Creek,Licensing & Permits,951,21.014252568776932
+13,Cherry Creek,Solid Waste,868,19.18020108275329
+13,Cherry Creek,Parking & Vehicles,826,18.252126836813613
+13,Cherry Creek,Public Safety (non-emergency),737,16.285493315655728
+13,Cherry Creek,General Information,688,15.20274002872611
+13,Cherry Creek,Public Health & Noise,462,10.208816705336428
+13,Cherry Creek,Parks & Trees,215,4.750856258976909
+13,Cherry Creek,Animals,155,3.425035907634516
+13,Cherry Creek,Taxes & Property,86,1.9003425035907637
+13,Cherry Creek,"Clerk, DMV & Elections",60,1.325820351342393
+13,Cherry Creek,Encampments,31,0.6850071815269032
+14,City Park,Streets & Traffic,909,34.18192757492573
+14,City Park,Neighborhood Inspection,564,21.20858872635656
+14,City Park,Parks & Trees,399,15.003948407475653
+14,City Park,General Information,367,13.80062422441996
+14,City Park,Solid Waste,358,13.462189297935547
+14,City Park,Encampments,356,13.386981536494565
+14,City Park,Public Safety (non-emergency),321,12.070845711277403
+14,City Park,Parking & Vehicles,246,9.250554657240627
+14,City Park,Licensing & Permits,222,8.348061519948859
+14,City Park,Public Health & Noise,150,5.640582108073553
+14,City Park,Animals,88,3.309141503403151
+14,City Park,Taxes & Property,16,0.6016620915278457
+14,City Park,"Clerk, DMV & Elections",16,0.6016620915278457
+15,City Park West,Streets & Traffic,1523,36.06355520825934
+15,City Park West,Neighborhood Inspection,1409,33.36411640737846
+15,City Park West,Encampments,1407,33.31675783192441
+15,City Park West,Solid Waste,1046,24.768534962468326
+15,City Park West,Public Safety (non-emergency),877,20.766735336601077
+15,City Park West,Licensing & Permits,645,15.273140583931234
+15,City Park West,General Information,574,13.591911155312449
+15,City Park West,Parking & Vehicles,512,12.123795316236887
+15,City Park West,Public Health & Noise,433,10.2531315858019
+15,City Park West,Animals,165,3.9070824749591537
+15,City Park West,Parks & Trees,100,2.367928772702517
+15,City Park West,"Clerk, DMV & Elections",42,0.9945300845350571
+15,City Park West,Taxes & Property,37,0.8761336458999313
+16,Civic Center,Streets & Traffic,1234,44.1597480675637
+16,Civic Center,Public Safety (non-emergency),634,22.688233610077297
+16,Civic Center,Neighborhood Inspection,631,22.580876037789864
+16,Civic Center,General Information,416,14.886916690523906
+16,Civic Center,Licensing & Permits,371,13.276553106212424
+16,Civic Center,Encampments,365,13.061837961637561
+16,Civic Center,Public Health & Noise,342,12.238763240767248
+16,Civic Center,Parking & Vehicles,333,11.916690523904952
+16,Civic Center,Solid Waste,284,10.163183509876896
+16,Civic Center,Parks & Trees,91,3.256513026052104
+16,Civic Center,Animals,60,2.1471514457486403
+16,Civic Center,Taxes & Property,35,1.25250501002004
+16,Civic Center,"Clerk, DMV & Elections",17,0.608359576295448
+17,Clayton,Solid Waste,983,35.488645799487344
+17,Clayton,Neighborhood Inspection,862,31.12025704899094
+17,Clayton,Streets & Traffic,673,24.296906025488283
+17,Clayton,General Information,382,13.791111592476263
+17,Clayton,Licensing & Permits,353,12.744142387811834
+17,Clayton,Public Safety (non-emergency),263,9.494927614715333
+17,Clayton,Parking & Vehicles,254,9.170006137405682
+17,Clayton,Public Health & Noise,229,8.26744647821221
+17,Clayton,Animals,204,7.364886819018737
+17,Clayton,Parks & Trees,95,3.4297267049351965
+17,Clayton,Encampments,94,3.3936243185674573
+17,Clayton,Taxes & Property,79,2.852088523051374
+17,Clayton,"Clerk, DMV & Elections",23,0.8303548864579948
+18,Cole,Neighborhood Inspection,1277,40.65713648954121
+18,Cole,Solid Waste,1173,37.34598363526378
+18,Cole,Streets & Traffic,1000,31.83800821420612
+18,Cole,Licensing & Permits,525,16.71495431245821
+18,Cole,Parking & Vehicles,511,16.269222197459328
+18,Cole,General Information,375,11.939253080327294
+18,Cole,Public Safety (non-emergency),303,9.646916488904454
+18,Cole,Animals,250,7.95950205355153
+18,Cole,Public Health & Noise,208,6.622305708554873
+18,Cole,Parks & Trees,105,3.3429908624916425
+18,Cole,Encampments,100,3.183800821420612
+18,Cole,Taxes & Property,51,1.623738418924512
+18,Cole,"Clerk, DMV & Elections",47,1.4963863860676878
+19,College View - South Platte,Neighborhood Inspection,952,18.63013698630137
+19,College View - South Platte,Streets & Traffic,950,18.59099804305284
+19,College View - South Platte,Solid Waste,648,12.68101761252446
+19,College View - South Platte,Public Safety (non-emergency),554,10.841487279843443
+19,College View - South Platte,General Information,440,8.610567514677102
+19,College View - South Platte,Licensing & Permits,401,7.847358121330724
+19,College View - South Platte,Parking & Vehicles,384,7.514677103718199
+19,College View - South Platte,Public Health & Noise,356,6.966731898238747
+19,College View - South Platte,Encampments,275,5.38160469667319
+19,College View - South Platte,Animals,243,4.755381604696673
+19,College View - South Platte,Parks & Trees,135,2.641878669275929
+19,College View - South Platte,Taxes & Property,37,0.7240704500978474
+19,College View - South Platte,"Clerk, DMV & Elections",30,0.5870841487279843
+20,Congress Park,Neighborhood Inspection,4075,51.82895807895808
+20,Congress Park,Streets & Traffic,3047,38.75407000407
+20,Congress Park,Solid Waste,1677,21.32936507936508
+20,Congress Park,General Information,1012,12.871387871387872
+20,Congress Park,Parking & Vehicles,997,12.68060643060643
+20,Congress Park,Public Safety (non-emergency),745,9.475478225478225
+20,Congress Park,Licensing & Permits,687,8.737789987789988
+20,Congress Park,Public Health & Noise,451,5.736161986161986
+20,Congress Park,Parks & Trees,364,4.62962962962963
+20,Congress Park,Animals,284,3.612128612128612
+20,Congress Park,Encampments,266,3.383190883190883
+20,Congress Park,Taxes & Property,89,1.131969881969882
+20,Congress Park,"Clerk, DMV & Elections",82,1.042938542938543
+21,Cory - Merrill,Streets & Traffic,1281,42.37091919425793
+21,Cory - Merrill,Neighborhood Inspection,1088,35.987166341415005
+21,Cory - Merrill,Solid Waste,797,26.36192240267258
+21,Cory - Merrill,Licensing & Permits,318,10.518307809347403
+21,Cory - Merrill,General Information,301,9.956008335262792
+21,Cory - Merrill,Public Safety (non-emergency),247,8.169880594052856
+21,Cory - Merrill,Parking & Vehicles,198,6.549135051103099
+21,Cory - Merrill,Public Health & Noise,135,4.46531935302484
+21,Cory - Merrill,Encampments,97,3.208414646247478
+21,Cory - Merrill,Animals,89,2.9438031290311906
+21,Cory - Merrill,Parks & Trees,59,1.9515099394701156
+21,Cory - Merrill,Taxes & Property,58,1.9184334998180796
+21,Cory - Merrill,"Clerk, DMV & Elections",26,0.8599874309529323
+22,Country Club,Streets & Traffic,1073,46.365914786967416
+22,Country Club,Neighborhood Inspection,646,27.914614121510674
+22,Country Club,Solid Waste,622,26.87753867427189
+22,Country Club,General Information,323,13.957307060755337
+22,Country Club,Parking & Vehicles,223,9.636159363927058
+22,Country Club,Parks & Trees,221,9.549736409990494
+22,Country Club,Licensing & Permits,159,6.870624837956961
+22,Country Club,Public Safety (non-emergency),125,5.401434621035348
+22,Country Club,Public Health & Noise,92,3.9754558810820155
+22,Country Club,Animals,71,3.068014864748077
+22,Country Club,Encampments,41,1.7716705556995938
+22,Country Club,Taxes & Property,34,1.4691902169216144
+22,Country Club,"Clerk, DMV & Elections",25,1.0802869242070696
+23,DIA,Neighborhood Inspection,762,29.572709279310747
+23,DIA,Public Safety (non-emergency),674,26.157488260177747
+23,DIA,Licensing & Permits,648,25.148445686342995
+23,DIA,Streets & Traffic,497,19.288236892148873
+23,DIA,General Information,357,13.854930725346373
+23,DIA,Public Health & Noise,258,10.012807078821748
+23,DIA,Parking & Vehicles,130,5.04521286917375
+23,DIA,Solid Waste,95,3.6868863274731245
+23,DIA,Animals,74,2.87189040245275
+23,DIA,Encampments,37,1.435945201226375
+23,DIA,Parks & Trees,30,1.16427989288625
+23,DIA,Taxes & Property,18,0.69856793573175
+23,DIA,"Clerk, DMV & Elections",17,0.6597586059688749
+24,East Colfax,Solid Waste,1623,24.301136448710082
+24,East Colfax,Neighborhood Inspection,1603,24.00167697306362
+24,East Colfax,Streets & Traffic,1224,18.326919909563237
+24,East Colfax,Public Safety (non-emergency),1028,15.392217048227948
+24,East Colfax,General Information,976,14.613622411547155
+24,East Colfax,Parking & Vehicles,607,9.088595085870004
+24,East Colfax,Licensing & Permits,546,8.175243685148306
+24,East Colfax,Public Health & Noise,543,8.130324763801339
+24,East Colfax,Animals,297,4.446973213349904
+24,East Colfax,Encampments,170,2.545405542994894
+24,East Colfax,Parks & Trees,133,1.9914055130489465
+24,East Colfax,Taxes & Property,101,1.5122703520146137
+24,East Colfax,"Clerk, DMV & Elections",45,0.6737838202045309
+25,Elyria Swansea,Streets & Traffic,1408,30.10219352631804
+25,Elyria Swansea,Neighborhood Inspection,1369,29.268396972677127
+25,Elyria Swansea,Solid Waste,1108,23.68837388292641
+25,Elyria Swansea,Public Safety (non-emergency),707,15.115234959592936
+25,Elyria Swansea,Licensing & Permits,569,12.164877923632787
+25,Elyria Swansea,General Information,532,11.373840167614485
+25,Elyria Swansea,Animals,510,10.903493393765768
+25,Elyria Swansea,Parking & Vehicles,455,9.72762645914397
+25,Elyria Swansea,Public Health & Noise,429,9.171762090050029
+25,Elyria Swansea,Encampments,323,6.905545816051653
+25,Elyria Swansea,Parks & Trees,97,2.0738016846966265
+25,Elyria Swansea,Taxes & Property,44,0.9406935476974387
+25,Elyria Swansea,"Clerk, DMV & Elections",17,0.3634497797921922
+25,Elyria Swansea,Other,2,0.042758797622610846
+26,Five Points,Neighborhood Inspection,4746,29.787794912350073
+26,Five Points,Streets & Traffic,4150,26.047060448009443
+26,Five Points,Encampments,4131,25.92780884595831
+26,Five Points,Licensing & Permits,2729,17.12829589460669
+26,Five Points,Public Safety (non-emergency),2578,16.18055947830562
+26,Five Points,Solid Waste,2152,13.506813032317185
+26,Five Points,General Information,1892,11.874949004249123
+26,Five Points,Parking & Vehicles,1866,11.711762601442317
+26,Five Points,Public Health & Noise,1547,9.709590967004965
+26,Five Points,Animals,484,3.0377776522497757
+26,Five Points,Parks & Trees,394,2.472901642533908
+26,Five Points,"Clerk, DMV & Elections",171,1.073264418460148
+26,Five Points,Taxes & Property,154,0.9665656166249286
+27,Fort Logan,Solid Waste,907,13.846059902909658
+27,Fort Logan,Streets & Traffic,870,13.281226147223157
+27,Fort Logan,Neighborhood Inspection,663,10.121210270814887
+27,Fort Logan,General Information,356,5.434616676334992
+27,Fort Logan,Public Safety (non-emergency),341,5.205630018624248
+27,Fort Logan,Parking & Vehicles,281,4.289683387781272
+27,Fort Logan,Animals,189,2.885231887155375
+27,Fort Logan,Public Health & Noise,189,2.885231887155375
+27,Fort Logan,Licensing & Permits,160,2.442524348914603
+27,Fort Logan,Parks & Trees,159,2.427258571733887
+27,Fort Logan,Encampments,58,0.8854150764815437
+27,Fort Logan,"Clerk, DMV & Elections",48,0.7327573046743809
+27,Fort Logan,Taxes & Property,41,0.625896864409367
+28,Gateway - Green Valley Ranch,Solid Waste,4960,15.007655114403113
+28,Gateway - Green Valley Ranch,Streets & Traffic,3015,9.122596808452698
+28,Gateway - Green Valley Ranch,Neighborhood Inspection,1994,6.0333194149435085
+28,Gateway - Green Valley Ranch,Parking & Vehicles,1858,5.621819194064715
+28,Gateway - Green Valley Ranch,General Information,1781,5.388837451361279
+28,Gateway - Green Valley Ranch,Public Safety (non-emergency),1519,4.596094378785954
+28,Gateway - Green Valley Ranch,Licensing & Permits,1338,4.048435996586969
+28,Gateway - Green Valley Ranch,Animals,1060,3.2072811333200195
+28,Gateway - Green Valley Ranch,Public Health & Noise,821,2.4841300098639025
+28,Gateway - Green Valley Ranch,Parks & Trees,333,1.0075703937694025
+28,Gateway - Green Valley Ranch,"Clerk, DMV & Elections",178,0.5385811714443053
+28,Gateway - Green Valley Ranch,Taxes & Property,139,0.42057743163347433
+28,Gateway - Green Valley Ranch,Encampments,74,0.22390453194875612
+29,Globeville,Streets & Traffic,1201,39.48709518329772
+29,Globeville,Neighborhood Inspection,876,28.801578168666776
+29,Globeville,Public Safety (non-emergency),808,26.565839224067073
+29,Globeville,Solid Waste,673,22.127239848758833
+29,Globeville,General Information,417,13.710340292618772
+29,Globeville,Licensing & Permits,401,13.18428407036002
+29,Globeville,Parking & Vehicles,332,10.915666611869145
+29,Globeville,Encampments,330,10.849909584086799
+29,Globeville,Public Health & Noise,324,10.652638500739766
+29,Globeville,Animals,224,7.3647871116225545
+29,Globeville,Parks & Trees,97,3.1892158474436956
+29,Globeville,"Clerk, DMV & Elections",26,0.8548413611704752
+29,Globeville,Taxes & Property,25,0.821962847279303
+30,Goldsmith,Streets & Traffic,1164,29.36353775131808
+30,Goldsmith,Neighborhood Inspection,697,17.58280568098686
+30,Goldsmith,General Information,585,14.757448096667591
+30,Goldsmith,Public Safety (non-emergency),450,11.351883151282765
+30,Goldsmith,Encampments,406,10.241921243157337
+30,Goldsmith,Public Health & Noise,402,10.141015615145935
+30,Goldsmith,Licensing & Permits,341,8.602204787972049
+30,Goldsmith,Solid Waste,309,7.794959763880831
+30,Goldsmith,Parking & Vehicles,255,6.4327337857268985
+30,Goldsmith,Parks & Trees,162,4.086677934461795
+30,Goldsmith,Animals,146,3.6830554224161856
+30,Goldsmith,Taxes & Property,41,1.034282687116874
+30,Goldsmith,"Clerk, DMV & Elections",41,1.034282687116874
+31,Hale,Streets & Traffic,2082,32.488101739876726
+31,Hale,Neighborhood Inspection,1774,27.681984863852694
+31,Hale,Solid Waste,1312,20.47280954981665
+31,Hale,General Information,776,12.108917843489115
+31,Hale,Public Safety (non-emergency),596,9.30014824061793
+31,Hale,Parking & Vehicles,578,9.01927128033081
+31,Hale,Licensing & Permits,570,8.89443707575876
+31,Hale,Public Health & Noise,357,5.570726379027854
+31,Hale,Parks & Trees,226,3.52656627916049
+31,Hale,Animals,224,3.495357728017477
+31,Hale,Encampments,84,1.3107591480065537
+31,Hale,Taxes & Property,83,1.2951548724350475
+31,Hale,"Clerk, DMV & Elections",63,0.9830693610049153
+32,Hampden,Streets & Traffic,2346,16.62827373569125
+32,Hampden,Neighborhood Inspection,1419,10.05776659460609
+32,Hampden,General Information,1271,9.008753588262396
+32,Hampden,Public Safety (non-emergency),1074,7.612432221710316
+32,Hampden,Solid Waste,1051,7.449409930183931
+32,Hampden,Licensing & Permits,829,5.875890420668392
+32,Hampden,Parking & Vehicles,761,5.393911471807775
+32,Hampden,Parks & Trees,735,5.209625403125775
+32,Hampden,Public Health & Noise,735,5.209625403125775
+32,Hampden,Animals,410,2.9060495446007724
+32,Hampden,Encampments,408,2.8918736931636952
+32,Hampden,"Clerk, DMV & Elections",103,0.7300563490094624
+32,Hampden,Taxes & Property,80,0.5670340574830776
+33,Hampden South,Streets & Traffic,2316,19.304343477282387
+33,Hampden South,Neighborhood Inspection,1485,12.377785001625366
+33,Hampden South,Solid Waste,1192,9.935568836321506
+33,Hampden South,Public Safety (non-emergency),844,7.0349161894759655
+33,Hampden South,General Information,782,6.518133246647162
+33,Hampden South,Licensing & Permits,678,5.6512715360956225
+33,Hampden South,Parking & Vehicles,616,5.134488593266818
+33,Hampden South,Public Health & Noise,487,4.059246663832695
+33,Hampden South,Parks & Trees,309,2.575579505388713
+33,Hampden South,Encampments,257,2.1421486501129423
+33,Hampden South,Animals,243,2.025455727538696
+33,Hampden South,"Clerk, DMV & Elections",85,0.7084927442007785
+33,Hampden South,Taxes & Property,73,0.6084702391371392
+34,Harvey Park,Neighborhood Inspection,2548,33.440514469453376
+34,Harvey Park,Solid Waste,1605,21.064374302775775
+34,Harvey Park,Streets & Traffic,1500,19.686331124089506
+34,Harvey Park,Parking & Vehicles,750,9.843165562044753
+34,Harvey Park,General Information,626,8.21576218912002
+34,Harvey Park,Public Safety (non-emergency),445,5.8402782334798875
+34,Harvey Park,Public Health & Noise,398,5.223439858258415
+34,Harvey Park,Animals,390,5.118446092263272
+34,Harvey Park,Licensing & Permits,351,4.606601483036945
+34,Harvey Park,Parks & Trees,147,1.9292604501607717
+34,Harvey Park,Encampments,112,1.4699127239320167
+34,Harvey Park,"Clerk, DMV & Elections",78,1.0236892184526543
+34,Harvey Park,Taxes & Property,69,0.9055712317081174
+35,Harvey Park South,Neighborhood Inspection,1070,17.411680471254453
+35,Harvey Park South,Solid Waste,1026,16.69568613411876
+35,Harvey Park South,Streets & Traffic,845,13.750345792719639
+35,Harvey Park South,General Information,425,6.915854392787985
+35,Harvey Park South,Public Safety (non-emergency),423,6.883309195645452
+35,Harvey Park South,Parking & Vehicles,412,6.704310611361528
+35,Harvey Park South,Public Health & Noise,297,4.832961775665956
+35,Harvey Park South,Animals,256,4.165785234244057
+35,Harvey Park South,Licensing & Permits,159,2.5873431728312695
+35,Harvey Park South,Parks & Trees,72,1.1716270971311409
+35,Harvey Park South,Encampments,69,1.1228093014173433
+35,Harvey Park South,Taxes & Property,47,0.7648121328494948
+35,Harvey Park South,"Clerk, DMV & Elections",36,0.5858135485655704
+36,Highland,Neighborhood Inspection,3596,45.285109812613335
+36,Highland,Streets & Traffic,2367,29.80807979044933
+36,Highland,Solid Waste,2114,26.62200282087447
+36,Highland,Licensing & Permits,1606,20.224662502518637
+36,Highland,Parking & Vehicles,1043,13.134696755994359
+36,Highland,General Information,857,10.792363489824703
+36,Highland,Public Safety (non-emergency),806,10.150110820068507
+36,Highland,Encampments,607,7.644066089059037
+36,Highland,Public Health & Noise,528,6.649204110417086
+36,Highland,Parks & Trees,315,3.966854724964739
+36,Highland,Animals,288,3.6268386056820474
+36,Highland,Taxes & Property,117,1.4734031835583319
+36,Highland,"Clerk, DMV & Elections",96,1.2089462018940156
+37,Hilltop,Streets & Traffic,2608,39.32152280437241
+37,Hilltop,Solid Waste,1588,23.942706370147004
+37,Hilltop,Neighborhood Inspection,1359,20.49001130795326
+37,Hilltop,General Information,704,10.614398793818319
+37,Hilltop,Parks & Trees,457,6.8903128533735405
+37,Hilltop,Public Safety (non-emergency),343,5.171503957783641
+37,Hilltop,Licensing & Permits,306,4.613644930267622
+37,Hilltop,Parking & Vehicles,288,4.342254052016585
+37,Hilltop,Public Health & Noise,244,3.67885412740294
+37,Hilltop,Animals,147,2.2163588390501316
+37,Hilltop,Taxes & Property,79,1.1911044101017716
+37,Hilltop,"Clerk, DMV & Elections",45,0.6784771956275915
+37,Hilltop,Encampments,39,0.5880135695439126
+38,Indian Creek,Solid Waste,376,13.133077191756898
+38,Indian Creek,Streets & Traffic,371,12.95843520782396
+38,Indian Creek,Parking & Vehicles,238,8.312958435207824
+38,Indian Creek,Neighborhood Inspection,235,8.20817324484806
+38,Indian Creek,General Information,189,6.601466992665037
+38,Indian Creek,Public Safety (non-emergency),124,4.33112120153685
+38,Indian Creek,Public Health & Noise,98,3.4229828850855744
+38,Indian Creek,Licensing & Permits,83,2.8990569332867624
+38,Indian Creek,Animals,69,2.410059378274537
+38,Indian Creek,Parks & Trees,30,1.047851903597625
+38,Indian Creek,Taxes & Property,22,0.7684247293049249
+38,Indian Creek,"Clerk, DMV & Elections",19,0.6636395389451624
+38,Indian Creek,Encampments,14,0.4889975550122249
+39,Jefferson Park,Neighborhood Inspection,971,28.29171644182862
+39,Jefferson Park,Streets & Traffic,776,22.610063809329564
+39,Jefferson Park,Solid Waste,572,16.666181055330554
+39,Jefferson Park,Licensing & Permits,498,14.51006672299758
+39,Jefferson Park,Parking & Vehicles,497,14.48093004283092
+39,Jefferson Park,Public Safety (non-emergency),355,10.343521459164943
+39,Jefferson Park,General Information,344,10.023017977331664
+39,Jefferson Park,Public Health & Noise,220,6.410069636665598
+39,Jefferson Park,Parks & Trees,136,3.9625885026660055
+39,Jefferson Park,Encampments,110,3.205034818332799
+39,Jefferson Park,Animals,75,2.1852510124996356
+39,Jefferson Park,"Clerk, DMV & Elections",40,1.1654672066664724
+39,Jefferson Park,Taxes & Property,34,0.9906471256665014
+40,Kennedy,General Information,303,10.108760926135984
+40,Kennedy,Public Health & Noise,227,7.573230132781745
+40,Kennedy,Public Safety (non-emergency),226,7.539867885500767
+40,Kennedy,Streets & Traffic,153,5.104423833989458
+40,Kennedy,Neighborhood Inspection,144,4.804163608460667
+40,Kennedy,Licensing & Permits,127,4.2370054046840595
+40,Kennedy,Parks & Trees,49,1.6347501167678655
+40,Kennedy,Animals,39,1.301127643958097
+40,Kennedy,Encampments,24,0.8006939347434443
+40,Kennedy,Parking & Vehicles,20,0.667244945619537
+40,Kennedy,"Clerk, DMV & Elections",13,0.433709214652699
+40,Kennedy,Solid Waste,11,0.36698472009074534
+40,Kennedy,Taxes & Property,2,0.06672449456195369
+41,Lincoln Park,Streets & Traffic,2396,48.10085923070746
+41,Lincoln Park,Public Safety (non-emergency),1794,36.015417971573115
+41,Lincoln Park,Neighborhood Inspection,1540,30.916245081506464
+41,Lincoln Park,Solid Waste,1025,20.577370914639044
+41,Lincoln Park,Licensing & Permits,980,19.67397414277684
+41,Lincoln Park,Parking & Vehicles,942,18.911105757648762
+41,Lincoln Park,General Information,791,15.879707700955592
+41,Lincoln Park,Encampments,607,12.185818678230145
+41,Lincoln Park,Public Health & Noise,582,11.683931582751145
+41,Lincoln Park,Animals,214,4.296153537300249
+41,Lincoln Park,Parks & Trees,169,3.392756765438047
+41,Lincoln Park,"Clerk, DMV & Elections",73,1.465510318798683
+41,Lincoln Park,Taxes & Property,52,1.0439251585963223
+42,Lowry Field,Streets & Traffic,1736,24.987405541561714
+42,Lowry Field,Solid Waste,1120,16.120906801007557
+42,Lowry Field,General Information,717,10.320259086002158
+42,Lowry Field,Neighborhood Inspection,610,8.780136739834472
+42,Lowry Field,Public Safety (non-emergency),502,7.225620726880172
+42,Lowry Field,Parks & Trees,346,4.980208708168406
+42,Lowry Field,Parking & Vehicles,343,4.937027707808564
+42,Lowry Field,Licensing & Permits,338,4.865059373875495
+42,Lowry Field,Public Health & Noise,293,4.217344368477869
+42,Lowry Field,Animals,206,2.9650953580424613
+42,Lowry Field,"Clerk, DMV & Elections",49,0.7052896725440807
+42,Lowry Field,Taxes & Property,37,0.532565671104714
+42,Lowry Field,Encampments,33,0.4749910039582584
+43,Mar Lee,Neighborhood Inspection,1704,18.804833636815097
+43,Mar Lee,Solid Waste,1510,16.663907741543895
+43,Mar Lee,Streets & Traffic,1170,12.911769574573746
+43,Mar Lee,General Information,693,7.6477404403244496
+43,Mar Lee,Parking & Vehicles,639,7.051812613805662
+43,Mar Lee,Public Safety (non-emergency),541,5.970313965678972
+43,Mar Lee,Animals,465,5.131600728356232
+43,Mar Lee,Public Health & Noise,417,4.601887104783976
+43,Mar Lee,Licensing & Permits,322,3.5534955581305523
+43,Mar Lee,Parks & Trees,235,2.5933896154058376
+43,Mar Lee,Encampments,112,1.2359984550019312
+43,Mar Lee,Taxes & Property,97,1.0704629476356011
+43,Mar Lee,"Clerk, DMV & Elections",70,0.772499034376207
+44,Marston,Solid Waste,1028,12.320230105465004
+44,Marston,Streets & Traffic,855,10.246883988494726
+44,Marston,Neighborhood Inspection,662,7.933844678811121
+44,Marston,Public Safety (non-emergency),479,5.74065196548418
+44,Marston,Parking & Vehicles,427,5.11744966442953
+44,Marston,General Information,374,4.482262703739214
+44,Marston,Licensing & Permits,337,4.038830297219559
+44,Marston,Animals,209,2.5047938638542666
+44,Marston,Public Health & Noise,180,2.1572387344199426
+44,Marston,Parks & Trees,99,1.1864813039309683
+44,Marston,Encampments,82,0.9827420901246404
+44,Marston,"Clerk, DMV & Elections",54,0.6471716203259827
+44,Marston,Taxes & Property,48,0.5752636625119846
+45,Montbello,Solid Waste,3440,15.152115790354621
+45,Montbello,Neighborhood Inspection,2569,11.315635309715415
+45,Montbello,Streets & Traffic,2498,11.00290268729821
+45,Montbello,Parking & Vehicles,2005,8.8313930696689
+45,Montbello,General Information,1503,6.620241288634592
+45,Montbello,Public Safety (non-emergency),1290,5.682043421382983
+45,Montbello,Licensing & Permits,1075,4.7350361844858195
+45,Montbello,Animals,934,4.11397562447419
+45,Montbello,Public Health & Noise,827,3.6426743484369974
+45,Montbello,Encampments,275,1.211288326263814
+45,Montbello,Parks & Trees,158,0.6959402019988461
+45,Montbello,Taxes & Property,156,0.6871308323532909
+45,Montbello,"Clerk, DMV & Elections",154,0.6783214627077359
+46,Montclair,Streets & Traffic,1967,43.988728866624925
+46,Montclair,Neighborhood Inspection,1479,33.07540924948564
+46,Montclair,Solid Waste,1312,29.340728150997407
+46,Montclair,General Information,569,12.724751766705431
+46,Montclair,Parking & Vehicles,503,11.248770015207086
+46,Montclair,Licensing & Permits,373,8.341533231952768
+46,Montclair,Public Safety (non-emergency),356,7.961356114142589
+46,Montclair,Parks & Trees,283,6.328830843545935
+46,Montclair,Public Health & Noise,253,5.657930047410323
+46,Montclair,Animals,115,2.57178638518651
+46,Montclair,Taxes & Property,73,1.6325252705966546
+46,Montclair,Encampments,65,1.4536183916271583
+46,Montclair,"Clerk, DMV & Elections",44,0.98398783433223
+47,North Capitol Hill,Streets & Traffic,1602,29.258136391861782
+47,North Capitol Hill,Encampments,1442,26.33597545384812
+47,North Capitol Hill,Public Safety (non-emergency),1138,20.783869671622167
+47,North Capitol Hill,Neighborhood Inspection,1118,20.41859955437046
+47,North Capitol Hill,General Information,739,13.496730832450597
+47,North Capitol Hill,Public Health & Noise,592,10.811995470650546
+47,North Capitol Hill,Licensing & Permits,584,10.665887423749863
+47,North Capitol Hill,Parking & Vehicles,419,7.652408956423274
+47,North Capitol Hill,Solid Waste,363,6.629652628118493
+47,North Capitol Hill,Animals,115,2.100303174197319
+47,North Capitol Hill,"Clerk, DMV & Elections",81,1.4793439748694157
+47,North Capitol Hill,Parks & Trees,60,1.095810351755123
+47,North Capitol Hill,Taxes & Property,36,0.6574862110530738
+48,North Park Hill,Solid Waste,2604,33.92922291134622
+48,North Park Hill,Streets & Traffic,2317,30.189711784020428
+48,North Park Hill,Neighborhood Inspection,1567,20.417470162088915
+48,North Park Hill,General Information,710,9.251055402095169
+48,North Park Hill,Parking & Vehicles,553,7.205399489237504
+48,North Park Hill,Licensing & Permits,414,5.3942773753061966
+48,North Park Hill,Public Safety (non-emergency),324,4.2216083806744145
+48,North Park Hill,Animals,323,4.208578725178507
+48,North Park Hill,Public Health & Noise,264,3.439829050919894
+48,North Park Hill,Parks & Trees,239,3.114087663522177
+48,North Park Hill,Taxes & Property,124,1.6156772814926774
+48,North Park Hill,"Clerk, DMV & Elections",71,0.9251055402095169
+48,North Park Hill,Encampments,26,0.3387710428936259
+49,Northeast Park Hill,Solid Waste,2178,36.08290121104687
+49,Northeast Park Hill,Streets & Traffic,1921,31.82518513609781
+49,Northeast Park Hill,Neighborhood Inspection,1767,29.273868888852075
+49,Northeast Park Hill,Public Safety (non-emergency),1072,17.75981179900929
+49,Northeast Park Hill,General Information,907,15.02625867696029
+49,Northeast Park Hill,Licensing & Permits,874,14.479548052550488
+49,Northeast Park Hill,Parking & Vehicles,710,11.762561919119962
+49,Northeast Park Hill,Encampments,605,10.023028114179686
+49,Northeast Park Hill,Public Health & Noise,528,8.747369990556816
+49,Northeast Park Hill,Animals,315,5.218601414820828
+49,Northeast Park Hill,Parks & Trees,222,3.677871473302298
+49,Northeast Park Hill,Taxes & Property,102,1.6898328390848394
+49,Northeast Park Hill,"Clerk, DMV & Elections",83,1.3750600553337422
+50,Overland,Neighborhood Inspection,1312,48.48126524277584
+50,Overland,Encampments,1080,39.90835858399231
+50,Overland,Streets & Traffic,1068,39.464932377503516
+50,Overland,Solid Waste,667,24.647106644002662
+50,Overland,Public Safety (non-emergency),552,20.39760549848496
+50,Overland,Parking & Vehicles,506,18.697805040277885
+50,Overland,Licensing & Permits,484,17.884856995048406
+50,Overland,General Information,345,12.7485034365531
+50,Overland,Public Health & Noise,288,10.642228955731284
+50,Overland,Animals,134,4.951592639124972
+50,Overland,Parks & Trees,126,4.655975168132437
+50,Overland,Taxes & Property,30,1.1085655162220087
+50,Overland,"Clerk, DMV & Elections",21,0.7759958613554061
+51,Platt Park,Neighborhood Inspection,2507,50.59944294191257
+51,Platt Park,Streets & Traffic,1972,39.801396681871395
+51,Platt Park,Solid Waste,1221,24.643765389738824
+51,Platt Park,Parking & Vehicles,693,13.987001977959876
+51,Platt Park,Licensing & Permits,678,13.684253017397975
+51,Platt Park,General Information,553,11.161345012715456
+51,Platt Park,Public Safety (non-emergency),383,7.730190126347233
+51,Platt Park,Public Health & Noise,320,6.458644491987244
+51,Platt Park,Encampments,181,3.653170790780285
+51,Platt Park,Animals,121,2.4421749485326765
+51,Platt Park,Parks & Trees,115,2.3210753643079154
+51,Platt Park,Taxes & Property,69,1.3926452185847495
+51,Platt Park,"Clerk, DMV & Elections",59,1.1908125782101482
+52,Regis,Streets & Traffic,946,29.213760731270458
+52,Regis,Solid Waste,937,28.93582854672349
+52,Regis,Neighborhood Inspection,780,24.08745599407078
+52,Regis,Parking & Vehicles,456,14.081897350379839
+52,Regis,Licensing & Permits,317,9.789389166821074
+52,Regis,General Information,267,8.24532147489346
+52,Regis,Public Safety (non-emergency),264,8.152677413377804
+52,Regis,Public Health & Noise,172,5.311592860230992
+52,Regis,Parks & Trees,131,4.04545735285035
+52,Regis,Animals,125,3.8601692298190353
+52,Regis,Encampments,94,2.9028472608239144
+52,Regis,Taxes & Property,69,2.130813414860108
+52,Regis,"Clerk, DMV & Elections",22,0.6793897844481501
+53,Rosedale,Neighborhood Inspection,864,45.663548438243225
+53,Rosedale,Streets & Traffic,591,31.235135563659426
+53,Rosedale,Parking & Vehicles,518,27.37698853126156
+53,Rosedale,Solid Waste,489,25.844299984144605
+53,Rosedale,Licensing & Permits,292,15.43258812959146
+53,Rosedale,General Information,218,11.521589767982665
+53,Rosedale,Public Safety (non-emergency),177,9.354685270334548
+53,Rosedale,Parks & Trees,133,7.029226785053644
+53,Rosedale,Public Health & Noise,105,5.549389567147614
+53,Rosedale,Encampments,64,3.382485069499498
+53,Rosedale,Animals,63,3.329633740288568
+53,Rosedale,Taxes & Property,34,1.796945193171608
+53,Rosedale,"Clerk, DMV & Elections",32,1.691242534749749
+54,Ruby Hill,Solid Waste,1355,21.379658556596926
+54,Ruby Hill,Neighborhood Inspection,1301,20.527627883492695
+54,Ruby Hill,Streets & Traffic,1161,18.318659471740983
+54,Ruby Hill,General Information,649,10.240146423049008
+54,Ruby Hill,Parking & Vehicles,585,9.23033229196251
+54,Ruby Hill,Public Safety (non-emergency),537,8.472971693647636
+54,Ruby Hill,Public Health & Noise,429,6.768910347439174
+54,Ruby Hill,Animals,424,6.6900186184480415
+54,Ruby Hill,Encampments,409,6.453343431474645
+54,Ruby Hill,Licensing & Permits,393,6.2008898987030205
+54,Ruby Hill,Parks & Trees,225,3.5501278046009657
+54,Ruby Hill,"Clerk, DMV & Elections",81,1.2780460096563477
+54,Ruby Hill,Taxes & Property,53,0.8362523273060052
+55,Skyland,Solid Waste,882,36.76685147359206
+55,Skyland,Streets & Traffic,760,31.68118721080495
+55,Skyland,Neighborhood Inspection,659,27.470924173579558
+55,Skyland,General Information,300,12.505731793738796
+55,Skyland,Licensing & Permits,265,11.046729751135937
+55,Skyland,Parking & Vehicles,220,9.170869982075118
+55,Skyland,Public Safety (non-emergency),151,6.294551669515195
+55,Skyland,Public Health & Noise,119,4.960606944849723
+55,Skyland,Animals,111,4.6271207636833545
+55,Skyland,Parks & Trees,82,3.418233356955271
+55,Skyland,Taxes & Property,72,3.0013756304973116
+55,Skyland,"Clerk, DMV & Elections",20,0.8337154529159198
+55,Skyland,Encampments,9,0.37517195381216395
+56,Sloan Lake,Streets & Traffic,1811,32.632982557301425
+56,Sloan Lake,Solid Waste,1785,32.16448032290616
+56,Sloan Lake,Neighborhood Inspection,1737,31.29955312094565
+56,Sloan Lake,General Information,733,13.208159146605158
+56,Sloan Lake,Parking & Vehicles,505,9.099754937292778
+56,Sloan Lake,Licensing & Permits,455,8.198789101917255
+56,Sloan Lake,Public Safety (non-emergency),430,7.748306184229494
+56,Sloan Lake,Parks & Trees,323,5.820239296525877
+56,Sloan Lake,Animals,301,5.4238143289606455
+56,Sloan Lake,Public Health & Noise,283,5.099466628225458
+56,Sloan Lake,Taxes & Property,75,1.3514487530632837
+56,Sloan Lake,Encampments,63,1.1352169525731584
+56,Sloan Lake,"Clerk, DMV & Elections",62,1.117197635865648
+57,South Park Hill,Streets & Traffic,2684,42.195286830479965
+57,South Park Hill,Solid Waste,2200,34.58630068072128
+57,South Park Hill,Neighborhood Inspection,1630,25.625304595261678
+57,South Park Hill,General Information,703,11.051895172066846
+57,South Park Hill,Parking & Vehicles,606,9.526953732962317
+57,South Park Hill,Licensing & Permits,545,8.5679699413605
+57,South Park Hill,Parks & Trees,456,7.168796868367683
+57,South Park Hill,Public Safety (non-emergency),416,6.539955037809115
+57,South Park Hill,Encampments,261,4.103192944394661
+57,South Park Hill,Public Health & Noise,256,4.02458771557484
+57,South Park Hill,Animals,175,2.7511830086937383
+57,South Park Hill,Taxes & Property,94,1.4777783018126367
+57,South Park Hill,"Clerk, DMV & Elections",58,0.9118206543099248
+58,Southmoor Park,Streets & Traffic,658,14.989634826981343
+58,Southmoor Park,Neighborhood Inspection,366,8.337699615007859
+58,Southmoor Park,Solid Waste,273,6.219103811194387
+58,Southmoor Park,Public Safety (non-emergency),225,5.125635009226143
+58,Southmoor Park,General Information,218,4.966170808939108
+58,Southmoor Park,Licensing & Permits,182,4.146069207462925
+58,Southmoor Park,Public Health & Noise,142,3.2348452058227215
+58,Southmoor Park,Parking & Vehicles,127,2.8931362052076453
+58,Southmoor Park,Encampments,76,1.7313256031163862
+58,Southmoor Park,Animals,59,1.3440554024192997
+58,Southmoor Park,Parks & Trees,39,0.8884434015991981
+58,Southmoor Park,"Clerk, DMV & Elections",15,0.3417090006150762
+58,Southmoor Park,Taxes & Property,12,0.2733672004920609
+59,Speer,Neighborhood Inspection,4071,45.19868101122473
+59,Speer,Streets & Traffic,3583,39.78061264141935
+59,Speer,Solid Waste,1566,17.386670219498384
+59,Speer,Parking & Vehicles,1381,15.332689382584462
+59,Speer,Licensing & Permits,1184,13.145477356249097
+59,Speer,General Information,1129,12.534834404734147
+59,Speer,Public Safety (non-emergency),964,10.702905550189302
+59,Speer,Public Health & Noise,702,7.794024581154448
+59,Speer,Encampments,672,7.460946607600839
+59,Speer,Parks & Trees,324,3.597242114378976
+59,Speer,Animals,252,2.797854977850315
+59,Speer,Taxes & Property,88,0.9770287224239195
+59,Speer,"Clerk, DMV & Elections",83,0.9215157268316513
+60,Central Park,Solid Waste,4834,21.856292839961657
+60,Central Park,Streets & Traffic,4689,21.20069448212251
+60,Central Park,Neighborhood Inspection,2333,10.548351509232633
+60,Central Park,Public Safety (non-emergency),1917,8.667462427432044
+60,Central Park,Licensing & Permits,1342,6.067675836000941
+60,Central Park,General Information,1329,6.008898052194673
+60,Central Park,Parking & Vehicles,1328,6.004376684209575
+60,Central Park,Public Health & Noise,880,3.978803826885862
+60,Central Park,Parks & Trees,805,3.639701228003545
+60,Central Park,Animals,435,1.9667950735174433
+60,Central Park,Encampments,391,1.7678548821731501
+60,Central Park,Taxes & Property,130,0.5877778380626842
+60,Central Park,"Clerk, DMV & Elections",97,0.4385726945544644
+61,Sun Valley,Streets & Traffic,458,63.03330580787228
+61,Sun Valley,Public Safety (non-emergency),448,61.65703275529865
+61,Sun Valley,Neighborhood Inspection,370,50.922102945224324
+61,Sun Valley,Licensing & Permits,194,26.699697219928435
+61,Sun Valley,General Information,189,26.01156069364162
+61,Sun Valley,Encampments,113,15.551885494082025
+61,Sun Valley,Public Health & Noise,98,13.48747591522158
+61,Sun Valley,Parking & Vehicles,79,10.872557115331682
+61,Sun Valley,Solid Waste,78,10.73492981007432
+61,Sun Valley,Parks & Trees,56,7.707129094412331
+61,Sun Valley,Animals,36,4.954582989265071
+61,Sun Valley,Taxes & Property,6,0.8257638315441783
+61,Sun Valley,"Clerk, DMV & Elections",5,0.6881365262868153
+62,Sunnyside,Neighborhood Inspection,3060,44.36197048334252
+62,Sunnyside,Solid Waste,2252,32.6480906955841
+62,Sunnyside,Streets & Traffic,2018,29.25570471744614
+62,Sunnyside,Licensing & Permits,1003,14.540868102873379
+62,Sunnyside,Parking & Vehicles,919,13.323088520977702
+62,Sunnyside,General Information,805,11.67038765983357
+62,Sunnyside,Public Safety (non-emergency),573,8.30699643364551
+62,Sunnyside,Public Health & Noise,449,6.5093218127518915
+62,Sunnyside,Animals,446,6.465829684827047
+62,Sunnyside,Parks & Trees,155,2.247093276117023
+62,Sunnyside,Encampments,132,1.9136536286932067
+62,Sunnyside,Taxes & Property,128,1.8556641247934123
+62,Sunnyside,"Clerk, DMV & Elections",86,1.246774333845574
+63,Union Station,Neighborhood Inspection,1869,27.803811308965948
+63,Union Station,Licensing & Permits,1673,24.88805581589087
+63,Union Station,Streets & Traffic,1465,21.79378468038262
+63,Union Station,Public Safety (non-emergency),878,13.061394504693473
+63,Union Station,Public Health & Noise,800,11.901042828877882
+63,Union Station,Encampments,755,11.231609169753499
+63,Union Station,General Information,719,10.696062242453994
+63,Union Station,Parking & Vehicles,715,10.636557028309605
+63,Union Station,Parks & Trees,279,4.15048868657116
+63,Union Station,Solid Waste,175,2.603353118817036
+63,Union Station,Animals,112,1.6661459960429033
+63,Union Station,"Clerk, DMV & Elections",62,0.9223308192380357
+63,Union Station,Taxes & Property,47,0.6991862661965755
+64,University,Neighborhood Inspection,2255,34.310667498440424
+64,University,Streets & Traffic,1622,24.679336001095507
+64,University,Solid Waste,1056,16.06743453585503
+64,University,Parking & Vehicles,612,9.311808651461437
+64,University,Licensing & Permits,543,8.261947872130001
+64,University,General Information,518,7.881563531792523
+64,University,Public Safety (non-emergency),310,4.7167658201847145
+64,University,Public Health & Noise,291,4.427673721528232
+64,University,Animals,167,2.540967393454346
+64,University,Parks & Trees,129,1.962783196141381
+64,University,Taxes & Property,62,0.9433531640369429
+64,University,Encampments,61,0.9281377904234438
+64,University,"Clerk, DMV & Elections",37,0.5629688236994659
+65,University Hills,Neighborhood Inspection,1764,36.53762505437146
+65,University Hills,Streets & Traffic,1378,28.542430456306057
+65,University Hills,Solid Waste,1009,20.89935582758549
+65,University Hills,General Information,519,10.750015534704529
+65,University Hills,Licensing & Permits,499,10.335756747240003
+65,University Hills,Public Safety (non-emergency),479,9.921497959775472
+65,University Hills,Parking & Vehicles,367,7.6016487499741086
+65,University Hills,Public Health & Noise,346,7.166677023136354
+65,University Hills,Encampments,291,6.027465357608898
+65,University Hills,Animals,185,3.8318937840468936
+65,University Hills,Parks & Trees,181,3.7490420265539885
+65,University Hills,Taxes & Property,58,1.2013504836471345
+65,University Hills,"Clerk, DMV & Elections",49,1.0149340292880964
+66,University Park,Streets & Traffic,1727,29.245410824358192
+66,University Park,Neighborhood Inspection,1388,23.50470771523403
+66,University Park,Solid Waste,1057,17.899478425794214
+66,University Park,Parking & Vehicles,535,9.059811691390639
+66,University Park,General Information,532,9.00900900900901
+66,University Park,Licensing & Permits,379,6.418072207545892
+66,University Park,Public Safety (non-emergency),362,6.130190340716657
+66,University Park,Public Health & Noise,267,4.521438731965048
+66,University Park,Parks & Trees,199,3.3699112646481066
+66,University Park,Animals,130,2.201449569870623
+66,University Park,Encampments,105,1.7780938833570412
+66,University Park,Taxes & Property,48,0.812842918106076
+66,University Park,"Clerk, DMV & Elections",39,0.6604348709611867
+67,Valverde,Neighborhood Inspection,883,35.03968253968254
+67,Valverde,Streets & Traffic,856,33.96825396825397
+67,Valverde,Solid Waste,710,28.174603174603174
+67,Valverde,General Information,535,21.23015873015873
+67,Valverde,Parking & Vehicles,427,16.944444444444446
+67,Valverde,Encampments,380,15.079365079365079
+67,Valverde,Licensing & Permits,363,14.404761904761905
+67,Valverde,Public Safety (non-emergency),321,12.738095238095237
+67,Valverde,Public Health & Noise,318,12.61904761904762
+67,Valverde,Animals,274,10.873015873015875
+67,Valverde,Parks & Trees,97,3.8492063492063493
+67,Valverde,"Clerk, DMV & Elections",56,2.2222222222222223
+67,Valverde,Taxes & Property,33,1.3095238095238095
+68,Villa Park,Solid Waste,1493,29.40655098382935
+68,Villa Park,Neighborhood Inspection,1041,20.503830927104058
+68,Villa Park,Streets & Traffic,881,17.35242559728979
+68,Villa Park,Public Safety (non-emergency),782,15.402493549467215
+68,Villa Park,General Information,672,13.235902385219909
+68,Villa Park,Parking & Vehicles,500,9.848141655669576
+68,Villa Park,Animals,390,7.681550491422269
+68,Villa Park,Licensing & Permits,372,7.327017391818164
+68,Villa Park,Public Health & Noise,348,6.854306592346025
+68,Villa Park,Encampments,329,6.48007720943058
+68,Villa Park,Parks & Trees,224,4.41196746173997
+68,Villa Park,Taxes & Property,63,1.2408658486143667
+68,Villa Park,"Clerk, DMV & Elections",59,1.1620807153690098
+69,Virginia Village,Neighborhood Inspection,2123,21.436649299244717
+69,Virginia Village,Streets & Traffic,1841,18.58919988690981
+69,Virginia Village,Solid Waste,1634,16.499050850195886
+69,Virginia Village,General Information,1010,10.198311725029281
+69,Virginia Village,Public Safety (non-emergency),704,7.108526192495658
+69,Virginia Village,Parking & Vehicles,647,6.532977907023708
+69,Virginia Village,Licensing & Permits,620,6.260349771800153
+69,Virginia Village,Public Health & Noise,565,5.70499616301143
+69,Virginia Village,Parks & Trees,332,3.352316329415566
+69,Virginia Village,Animals,310,3.1301748859000766
+69,Virginia Village,Encampments,210,2.1204410517387617
+69,Virginia Village,Taxes & Property,99,0.9996364958197018
+69,Virginia Village,"Clerk, DMV & Elections",87,0.8784684357203442
+70,Washington Park,Streets & Traffic,2105,39.19633546849396
+70,Washington Park,Neighborhood Inspection,1968,36.6453150603307
+70,Washington Park,Solid Waste,1579,29.4019067481007
+70,Washington Park,General Information,622,11.582005064799642
+70,Washington Park,Parks & Trees,574,10.688216892596456
+70,Washington Park,Parking & Vehicles,497,9.254431699687174
+70,Washington Park,Licensing & Permits,447,8.323402353642186
+70,Washington Park,Public Safety (non-emergency),271,5.046179055563832
+70,Washington Park,Public Health & Noise,235,4.375837926411441
+70,Washington Park,Animals,169,3.146879189632057
+70,Washington Park,Taxes & Property,56,1.0427528675703859
+70,Washington Park,"Clerk, DMV & Elections",49,0.9124087591240876
+70,Washington Park,Encampments,34,0.6330999553105913
+70,Washington Park,Other,1,0.018620586920899747
+71,Washington Park West,Streets & Traffic,2434,43.58414210507467
+71,Washington Park West,Neighborhood Inspection,2302,41.220499230025425
+71,Washington Park West,Solid Waste,1405,25.158471510940803
+71,Washington Park West,General Information,686,12.283780396089245
+71,Washington Park West,Parking & Vehicles,600,10.743831250223828
+71,Washington Park West,Licensing & Permits,504,9.024818250188016
+71,Washington Park West,Public Safety (non-emergency),411,7.359524406403324
+71,Washington Park West,Public Health & Noise,244,4.369158041757691
+71,Washington Park West,Encampments,244,4.369158041757691
+71,Washington Park West,Parks & Trees,228,4.082655875085055
+71,Washington Park West,Animals,185,3.3126813021523476
+71,Washington Park West,Taxes & Property,84,1.5041363750313361
+71,Washington Park West,"Clerk, DMV & Elections",58,1.0385703541883036
+72,Washington Virginia Vale,Streets & Traffic,2043,20.472582972582973
+72,Washington Virginia Vale,Neighborhood Inspection,1528,15.311848645181978
+72,Washington Virginia Vale,General Information,949,9.509780343113677
+72,Washington Virginia Vale,Solid Waste,935,9.369488536155204
+72,Washington Virginia Vale,Public Safety (non-emergency),919,9.209155042488376
+72,Washington Virginia Vale,Licensing & Permits,659,6.603735770402436
+72,Washington Virginia Vale,Public Health & Noise,652,6.5335898669232
+72,Washington Virginia Vale,Parking & Vehicles,650,6.513548180214848
+72,Washington Virginia Vale,Parks & Trees,321,3.216690716690717
+72,Washington Virginia Vale,Animals,256,2.5653358986692316
+72,Washington Virginia Vale,Encampments,224,2.244668911335578
+72,Washington Virginia Vale,Taxes & Property,91,0.9118967452300786
+72,Washington Virginia Vale,"Clerk, DMV & Elections",67,0.671396504729838
+73,Wellshire,Streets & Traffic,765,33.43093125901324
+73,Wellshire,Solid Waste,518,22.636892015907005
+73,Wellshire,Neighborhood Inspection,429,18.747541843289778
+73,Wellshire,General Information,159,6.948389634226282
+73,Wellshire,Parking & Vehicles,80,3.496045098981777
+73,Wellshire,Public Safety (non-emergency),75,3.2775422802954153
+73,Wellshire,Parks & Trees,73,3.1901411528208716
+73,Wellshire,Licensing & Permits,72,3.1464405890835994
+73,Wellshire,Public Health & Noise,67,2.927937770397238
+73,Wellshire,Animals,41,1.7917231132281606
+73,Wellshire,Taxes & Property,19,0.8303107110081721
+73,Wellshire,"Clerk, DMV & Elections",13,0.5681073285845388
+73,Wellshire,Encampments,8,0.34960450989817765
+74,West Colfax,Neighborhood Inspection,2737,31.814483319772172
+74,West Colfax,Solid Waste,2370,27.548529582703708
+74,West Colfax,Streets & Traffic,2073,24.096245495757294
+74,West Colfax,Public Safety (non-emergency),1359,15.79681506451238
+74,West Colfax,General Information,1307,15.192374752993143
+74,West Colfax,Parking & Vehicles,1148,13.344182262001626
+74,West Colfax,Licensing & Permits,1017,11.821457631058934
+74,West Colfax,Public Health & Noise,648,7.532256189701267
+74,West Colfax,Encampments,556,6.462861792398001
+74,West Colfax,Parks & Trees,556,6.462861792398001
+74,West Colfax,Animals,397,4.614669301406486
+74,West Colfax,"Clerk, DMV & Elections",103,1.1972567708938742
+74,West Colfax,Taxes & Property,95,1.1042659537370685
+75,West Highland,Neighborhood Inspection,3067,41.545880631789984
+75,West Highland,Streets & Traffic,2264,30.668364444203625
+75,West Highland,Solid Waste,2227,30.167158841537756
+75,West Highland,Licensing & Permits,785,10.633686434938094
+75,West Highland,Parking & Vehicles,772,10.457587169136572
+75,West Highland,General Information,655,8.872693776922869
+75,West Highland,Public Safety (non-emergency),483,6.5427650293950315
+75,West Highland,Public Health & Noise,369,4.998509929289372
+75,West Highland,Animals,273,3.698084581831974
+75,West Highland,Parks & Trees,202,2.7363116686082742
+75,West Highland,Encampments,129,1.7474465606458778
+75,West Highland,Taxes & Property,108,1.462978515889572
+75,West Highland,"Clerk, DMV & Elections",65,0.880496329007613
+76,Westwood,Neighborhood Inspection,2373,21.49514932470991
+76,Westwood,Solid Waste,1943,17.60011594517967
+76,Westwood,Streets & Traffic,1547,14.013061949147168
+76,Westwood,General Information,1114,10.090853918131833
+76,Westwood,Parking & Vehicles,892,8.079929708234825
+76,Westwood,Public Safety (non-emergency),750,6.793662871273676
+76,Westwood,Animals,619,5.607036423091207
+76,Westwood,Licensing & Permits,593,5.371522776887053
+76,Westwood,Public Health & Noise,558,5.054485176227614
+76,Westwood,Encampments,256,2.318903593394748
+76,Westwood,Parks & Trees,137,1.2409757511526582
+76,Westwood,"Clerk, DMV & Elections",87,0.7880648930677464
+76,Westwood,Taxes & Property,84,0.7608902415826517
+77,Whittier,Solid Waste,1189,39.0296743697479
+77,Whittier,Streets & Traffic,1032,33.87605042016806
+77,Whittier,Neighborhood Inspection,975,32.00498949579832
+77,Whittier,Licensing & Permits,475,15.5921743697479
+77,Whittier,General Information,473,15.526523109243698
+77,Whittier,Parking & Vehicles,313,10.274422268907562
+77,Whittier,Animals,247,8.107930672268907
+77,Whittier,Public Safety (non-emergency),241,7.910976890756302
+77,Whittier,Public Health & Noise,223,7.320115546218488
+77,Whittier,Parks & Trees,166,5.44905462184874
+77,Whittier,Encampments,157,5.153623949579832
+77,Whittier,Taxes & Property,81,2.6588760504201683
+77,Whittier,"Clerk, DMV & Elections",53,1.7397584033613445
+78,Windsor,General Information,780,7.8904242620430125
+78,Windsor,Streets & Traffic,650,6.575353551702511
+78,Windsor,Public Safety (non-emergency),596,6.029093410484148
+78,Windsor,Parking & Vehicles,443,4.4813563436987875
+78,Windsor,Public Health & Noise,428,4.329617415582576
+78,Windsor,Licensing & Permits,346,3.500111275213952
+78,Windsor,Neighborhood Inspection,330,3.3382564185566594
+78,Windsor,Solid Waste,279,2.822344062961539
+78,Windsor,Animals,184,1.8613308515588645
+78,Windsor,Encampments,124,1.2543751390940177
+78,Windsor,Parks & Trees,93,0.9407813543205131
+78,Windsor,"Clerk, DMV & Elections",87,0.8800857830740284
+78,Windsor,Taxes & Property,45,0.4552167843486354
