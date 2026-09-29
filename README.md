@@ -10,6 +10,7 @@ change on Monday?
 
 **Live links**
 
+- Interactive dashboard (Tableau Public): [Denver 311 Service Analytics](https://public.tableau.com/app/profile/jason.pellerin/viz/denver311_dashboard/Denver311ServiceAnalytics)
 - Analyst workbook (Google Sheets, aggregates only): [Denver 311 Service Analytics 2019-2025](https://docs.google.com/spreadsheets/d/1JRjFq1S5DuKbDTFJ2JS4PkjELUqKWEnWJ7jfL9a-YIY/edit?usp=sharing)
 - Notebooks with outputs: [`notebooks/`](notebooks/)
 - Full findings with every figure: [`reports/findings.md`](reports/findings.md)
@@ -230,7 +231,7 @@ Built 100% native on Apple Silicon.
 | Relational model | PostgreSQL 17: typed schema, partial indexes, materialized views, parity checks against DuckDB |
 | GUI | DBeaver (connections to both databases) |
 | Analysis | JupyterLab, matplotlib |
-| Sharing | Google Sheets (analyst workbook), Tableau Public (dashboard guide in [`tableau/`](tableau/README.md)) |
+| Sharing | Google Sheets (analyst workbook), Tableau Public ([published dashboard](https://public.tableau.com/app/profile/jason.pellerin/viz/denver311_dashboard/Denver311ServiceAnalytics), build in [`tableau/`](tableau/README.md)) |
 | Editor, version control | Cursor, Git, GitHub |
 
 ## Reproduce
